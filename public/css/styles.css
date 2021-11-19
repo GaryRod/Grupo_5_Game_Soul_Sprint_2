@@ -67,34 +67,41 @@
     background-color: #548ca8;
 }
 
-.carrito__juegos, .carrito__total{
+.carrito__juegos, .carrito__cod-total{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .carrito__juegos{
-    height: 230px;
-    padding: 0 20px;
+    padding: 10px;
     border-bottom: solid 1px #476072;
 }
 
-.carrito__total{
+.carrito__cod-total{
     padding: 20px;
 }
-.carrito__img-titulo{
+
+.carrito__img-juego{
     display: flex;
     align-items: center;
     gap: 5px;
-    flex-wrap: wrap;
+}
+
+.carrito__juego{
+    font-size: 15px;
+}
+
+.carrito__i-precio,.carrito__total{
+    white-space: nowrap;
 }
 
 .carrito__i-precio{
     display: flex;
-    gap: 10px
+    gap: 5px
 }
 
-.carrito__codigo{
+.carrito__cod{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -139,7 +146,7 @@
     }
 
     .carrito__juegos{
-        height: 250px;
+        padding: 20px;
     }
 }
 

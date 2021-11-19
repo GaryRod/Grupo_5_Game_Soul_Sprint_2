@@ -24,13 +24,15 @@
             <div class="cont-i">
                 <i class="far fa-user"></i>
                 <i class="fas fa-shopping-cart"></i>
-                <span class="burger-menu">☰</span>
+                <span class="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </span>
             </div>
         </div>
 
         <nav class="header__nav">
             <ul class="header__lista">
-                
+                <li class="header__items"><a href="" class="header__enlaces">Favoritos</a></li>
                 <li class="header__items"><a href="" class="header__enlaces">Ofertas</a></li>
                 <li class="header__items"><a href="" class="header__enlaces">Consolas</a></li>
                 <li class="header__items"><a href="" class="header__enlaces">Categorias</a></li>
@@ -42,13 +44,13 @@
     <main class="main">
         <section class="carrito">
             <div class="carrito__juegos">
-                <div class="carrito__img-titulo">
+                <div class="carrito__img-juego">
                     <picture>
-                        <source media="(max-width: 481px)" srcset="../public/images/ACValhalla-150px.jpg">
+                        <source media="(max-width: 481px)" srcset="../public/images/ACValhalla-100px.jpg">
                         <source media="(max-width: 769px)" srcset="../public/images/ACValhalla-200px.jpg">
                         <img src="../public/images/ACValhalla-200px.jpg" alt="ACValhalla">
                     </picture>
-                    <h3>Assassin's Creed: Valhalla</h3>
+                    <h3 class="carrito__juego">Assassin's Creed: Valhalla</h3>
                 </div>
                 <div class="carrito__i-precio">
                     <i class="fas fa-trash-alt"></i>
@@ -57,13 +59,13 @@
             </div>
 
             <div class="carrito__juegos">
-                <div class="carrito__img-titulo">
+                <div class="carrito__img-juego">
                     <picture>
-                        <source media="(max-width: 481px)" srcset="../public/images/age-of-empires-4-150px.jpg">
+                        <source media="(max-width: 481px)" srcset="../public/images/age-of-empires-4-100px.jpg">
                         <source media="(max-width: 769px)" srcset="../public/images/age-of-empires-4-200px.jpg">
                         <img src="../public/images/age-of-empires-4-200px.jpg" alt="age-of-empires-4">
                     </picture>
-                    <h3>Age Of Empires 4</h3>
+                    <h3 class="carrito__juego">Age Of Empires 4</h3>
                 </div>
                 <div class="carrito__i-precio">
                     <i class="fas fa-trash-alt"></i>
@@ -72,13 +74,13 @@
             </div>
 
             <div class="carrito__juegos">
-                <div class="carrito__img-titulo">
+                <div class="carrito__img-juego">
                     <picture>
-                        <source media="(max-width: 481px)" srcset="../public/images/God_of_War-150px.jpg">
+                        <source media="(max-width: 481px)" srcset="../public/images/God_of_War-100px.jpg">
                         <source media="(max-width: 769px)" srcset="../public/images/God_of_War-200px.jpg">
                         <img src="../public/images/God_of_War-200px.jpg" alt="God_of_War">
                     </picture>
-                    <h3>God Of War 4</h3>
+                    <h3 class="carrito__juego">God Of War 4</h3>
                 </div>
                 <div class="carrito__i-precio">
                     <i class="fas fa-trash-alt"></i>
@@ -86,12 +88,12 @@
                 </div>
             </div>
 
-            <div class="carrito__total">
-                <div class="carrito__codigo">
+            <div class="carrito__cod-total">
+                <div class="carrito__cod">
                     <p>Código:</p>
                     <input type="text">
                 </div>
-                <p>$ 1000</p>
+                <p class="carrito__total">$ 1000</p>
             </div>
         </section>
 
