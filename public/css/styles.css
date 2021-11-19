@@ -18,6 +18,8 @@
     flex-direction: column;
     background-color: #334257;
     margin-bottom: 10px;
+    position: fixed;
+    top: 0;
 }
 
 .header__primer-fila{
@@ -30,10 +32,6 @@
 
 .header__logo{
     width: 60px;
-}
-
-.header__lista{
-    display: none;
 }
 
 .cont-search{
@@ -50,14 +48,61 @@
     border: solid 1px #548ca8;
 }
 
+.header__nav{
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    left: 100%;
+    transition: all .5s;
+}
+
+.header__lista{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+}
+
+.header__items{
+    width: 100%;
+    background-color: #548ca8;
+}
+
+.header__enlaces{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #eee;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+.header__enlaces:hover{
+    background-color: #eee;
+    color: #548ca8;
+}
+
+/* .check{
+    display: none;
+} */
+
+/* #check:checked ~ nav{
+        transform: translateX(-100%);
+} */
+
 .cont-i{
     font-size: 25px;
     display: flex;
-    gap: 10px
+    gap: 10px;
+}
+
+.fa-shopping-cart, .fa-user{
+    cursor: pointer;
 }
 
 .main{
     width: 100%;
+    margin-top: 70px
 }
 
 .carrito{
@@ -96,6 +141,10 @@
     white-space: nowrap;
 }
 
+.carrito__i-precio-cant{
+    display: flex;
+    gap: 10px;
+}
 .carrito__i-precio{
     display: flex;
     gap: 5px
@@ -105,6 +154,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+.pagar-metodos{
+    width: 100%;
+    background-color: #548ca8;
 }
 
 @media (min-width: 481px ) {
@@ -117,28 +171,15 @@
     }
 
     .header__lista{
-        display: flex;
-        list-style: none;
-        text-align: center;
+        flex-direction: row;
     }
-    
-    .header__items{
-        width: 100%;
-        background-color: #548ca8;
+
+    .main{
+        margin-top: 150px;
     }
-    
-    .header__enlaces{
-        display: block;
-        text-decoration: none;
-        padding: 10px;
-        color: #eee;
-        font-weight: bold;
-        transition-duration: .5s;
-    }
-    
-    .header__enlaces:hover{
-        background-color: #eee;
-        color: #548ca8;
+
+    .header__nav{
+        position: static;
     }
 
     .cont-i{

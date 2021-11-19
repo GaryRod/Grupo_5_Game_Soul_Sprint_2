@@ -17,18 +17,19 @@
             </div>
             
             <div class="cont-search">
-                <input type="text" placeholder="Dime que juego buscas" class="cont-search__input">
+                <input type="search" placeholder="Dime que juego buscas" class="cont-search__input">
                 <i class="fas fa-search"></i>
             </div>
             
             <div class="cont-i">
                 <i class="far fa-user"></i>
                 <i class="fas fa-shopping-cart"></i>
-                <span class="burger-menu">
+                <label for="check" class="burger-menu">
                     <i class="fas fa-bars"></i>
-                </span>
+                </label>
             </div>
         </div>
+        <!-- <input type="checkbox" id="check" class="check"> -->
 
         <nav class="header__nav">
             <ul class="header__lista">
@@ -52,9 +53,12 @@
                     </picture>
                     <h3 class="carrito__juego">Assassin's Creed: Valhalla</h3>
                 </div>
-                <div class="carrito__i-precio">
-                    <i class="fas fa-trash-alt"></i>
-                    <p>$ 1000</p>
+                <div class="carrito__i-precio-cant">
+                    <div class="carrito__i-precio">
+                        <i class="fas fa-trash-alt"></i>
+                        <p>$ 1000</p>
+                    </div>
+                    <p>1</p>
                 </div>
             </div>
 
@@ -67,9 +71,12 @@
                     </picture>
                     <h3 class="carrito__juego">Age Of Empires 4</h3>
                 </div>
-                <div class="carrito__i-precio">
-                    <i class="fas fa-trash-alt"></i>
-                    <p>$ 1000</p>
+                <div class="carrito__i-precio-cant">
+                    <div class="carrito__i-precio">
+                        <i class="fas fa-trash-alt"></i>
+                        <p>$ 1000</p>
+                    </div>
+                    <p>1</p>
                 </div>
             </div>
 
@@ -82,9 +89,12 @@
                     </picture>
                     <h3 class="carrito__juego">God Of War 4</h3>
                 </div>
-                <div class="carrito__i-precio">
-                    <i class="fas fa-trash-alt"></i>
-                    <p>$ 1000</p>
+                <div class="carrito__i-precio-cant">
+                    <div class="carrito__i-precio">
+                        <i class="fas fa-trash-alt"></i>
+                        <p>$ 1000</p>
+                    </div>
+                    <p>1</p>
                 </div>
             </div>
 
@@ -97,20 +107,18 @@
             </div>
         </section>
 
-        <section>
+        <section class="pagar-metodos">
             <h2>Elige un método de pago</h2>
-            <section>
-                <div>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                <div class="metodo-pago">
+                    <ul class="metodo-pago__lista">
+                        <li class="metodo-pago__items">Tarjeta</li>
+                        <li class="metodo-pago__items">Google Play</li>
+                        <li class="metodo-pago__items">Mercado Pago</li>
+                        <li class="metodo-pago__items">Paypal</li>
                     </ul>
                     <form action="">
                     </form>
                 </div>
-            </section>
         </section>
     </main>
 
