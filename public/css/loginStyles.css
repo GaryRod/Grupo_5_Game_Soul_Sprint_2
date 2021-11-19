@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #EEEEEE;
+}
+
+/* Teléfonos chicos, 361px */
+
+body {
+    background-color: #476072;
+}
+
+.form {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 90%;
+    margin: 2% auto;
+    border-radius: 50px;
+}
+
+.form__logo {
+    text-align: center;
+    padding: 2% 0 0 0;
+}
+
+
+.form__subtitulo-login, .form__subtitulo-a, .form__span, .form__a {
+    color: #000000;
+}
+
+.form__segunda-seccion {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__contenedor-subtitulos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.form__contenedor-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__login {
+    padding-left: 3px;
+    font-size: 20px; 
+}
+
+.form__input {
+    padding: 5px;
+    width: 50%;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form__tercera-seccion {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+.form__subtitulo-a, .form__a {
+    text-decoration: none;
+}
+
+.form__a {
+    font-size: 100%;
+}
+
+.form__boton-checkbox {
+    margin: 5px;
+}
+
+.form__cuarta-seccion {
+    display: flex;
+    padding: 15px;
+}
+
+.form__boton-enviar {
+    color: #000000;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color:rgba(255, 255, 255, 0.8);
+    transition: all 1s;
+}
+
+.form__boton-enviar:hover {
+    background-color: #476072;
+    color: white;
+}
+
+
+
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 0 0 0 -5%;
+}
+
+.footer__nav-bottom {
+    display: flex;
+    margin: 0 0 0 -4%;
+    justify-content: center;
+
+}
+
+.footer__ul-bottom {
+    display: flex;
+    margin: 0 0 0 -1%;
+}
+
+.footer__li {
+    list-style: none;
+    text-align: left;
+}
+
+.footer__li-img {
+    list-style: none;
+}
+
+.footer__li-img i {
+    margin: 10px;
+}
+
+.footer__li a {
+    text-decoration: none;
+}
+
+.footer__li-button {
+    border-radius: 45%;
+    padding: 1px;
+    background-color: #c08181;
+}
+
+
+
+.icono {
+    color: #000000;
+}
+
+/* Tablets y teléfonos grandes en adelante */
+
+@media (min-width: 481px) {
+
+    .form {
+        max-width: 65%;
+        border-radius: 50px;
+    }
+
+    .form__boton-enviar {
+        width: 40%;
+    }
+
+
+    .form__tercera-seccion {
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* PCs chicas en adelante*/
+
+@media (min-width: 769px) {
+
+    .form {
+        max-width: 65%;
+        margin: 2% 0 0 20%;
+        border-radius: 50px;
+    }
+
+
+    .form__input {
+        width: 30%;
+    }
+
+    .form__boton-enviar {
+        width: 25%;
+    }
+    .form__tercera-seccion {
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_ul {
+        margin: 1px auto;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0 -3% 0 -1%;
+    }
+
+    .footer__ul-bottom {
+        margin: 0 0 0 1%;
+    }
+}
+
+/* PCs grandes en adelante */
+
+@media (min-width: 1280px) {
+    .form {
+        max-width: 50%;
+        margin: 1% 0 0 25%;
+        padding-bottom: 1%;
+        border-radius: 50px;
+    }
+
+
+    .form__input {
+        width: 30%;
+    }
+
+    .form__contenedor-subtitulos {
+        justify-content: space-evenly;
+    }
+
+    .form__tercera-seccion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .form__boton-enviar {
+        width: 25%;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__ul-bottom {
+        margin: 0 0 0 1%;
+    }
+}
