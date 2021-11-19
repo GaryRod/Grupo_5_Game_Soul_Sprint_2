@@ -157,6 +157,9 @@
 .pagar-metodos{
     width: 100%;
     background-color: #548ca8;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
 
 .pagar-metodos__titulo{
@@ -165,16 +168,11 @@
     font-size: 20px;
 }
 
-.pagar-metodos__cont{
-    display: flex;
-    flex-direction: column;
-}
-
 .metodo-pago__lista{
     list-style: none;
     display: flex;
     flex-direction: column;
-    border-top: solid 1px #334257;
+    border-top: solid 1px #548ca8;
 }
 
 .metodo-pago__label{
@@ -182,14 +180,42 @@
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-    border-bottom: solid 1px #334257;
+    border-bottom: solid 1px #548ca8;
     padding: 10px;
+    background-color: #334257;
+    transition: all .5s;
+    cursor: pointer
 }
 
 .metodo-pago__label:hover{
     background-color: #476072;
 }
 
+.metodo-pago__pagar{
+    margin: 0 auto;
+}
+
+.metodo-pago__boton{
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #eee;
+    color: #334257;
+    border: solid 1px #eee;
+    cursor: pointer;
+    box-shadow: 2px 2px #000;
+    transition: color .5s, background-color .5s
+}
+
+.metodo-pago__boton:hover{
+    background-color: #476072;
+    color: #eee
+}
+
+.metodo-pago__boton:active{
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
+}
 
 @media (min-width: 481px ) {
     .burger-menu{
@@ -230,12 +256,19 @@
         width: 80%;
     }
 
-    .pagar-metodos__cont{
+    .pagar-metodos{
         flex-direction: row;
+        align-items: center;
+        padding: 15px;
     }
 
     .metodo-pago__lista{
         flex-direction: row;
+        border-left: solid 1px #548ca8;
+    }
+
+    .metodo-pago__label{
+        border-right: solid 1px #548ca8;
     }
 }
 
