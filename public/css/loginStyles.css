@@ -22,6 +22,10 @@ body {
     padding: 2% 0 0 0;
 }
 
+.form__img {
+    width: 200px;
+}
+
 
 .form__subtitulo-login, .form__subtitulo-a, .form__span, .form__a {
     color: #000000;
@@ -99,7 +103,9 @@ body {
     color: white;
 }
 
-
+.footer {
+    width: 90%;
+}
 
 .footer__nav {
     display: flex;
@@ -111,7 +117,7 @@ body {
 
 .footer__ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     gap: 10px;
     margin: 0 0 0 -5%;
 }
@@ -139,6 +145,16 @@ body {
 
 .footer__li-img i {
     margin: 10px;
+}
+
+.footer__li-img-mercadopago {
+    max-width: 25px;
+    margin: 0 5%;
+}
+
+.footer__li-img img {
+    width: 15vw;
+    margin: 50% 0 0 -100%;
 }
 
 .footer__li a {
@@ -177,10 +193,24 @@ body {
         flex-direction: column;
     }
 
+    .footer {
+        width: 100%;
+    }
+
     .footer__nav {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .footer__li-img-mercadopago {
+        max-width: 25px;
+        margin: 0 5%;
+    }
+    
+    .footer__li-img img {
+        width: 12vw;
+        margin: 50% 0 0 -100%;
     }
 }
 
@@ -223,6 +253,16 @@ body {
     .footer__ul-bottom {
         margin: 0 0 0 1%;
     }
+
+    .footer__li-img-mercadopago {
+        max-width: 25px;
+        margin: 0 5%;
+    }
+    
+    .footer__li-img img {
+        width: 7vw;
+        margin: 50% 0 0 -100%;
+    }
 }
 
 /* PCs grandes en adelante */
@@ -254,11 +294,25 @@ body {
         width: 25%;
     }
 
+    .footer {
+        width: 100%;
+    }
+
     .footer__nav {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    .footer__li-img-mercadopago {
+        max-width: 25px;
+        margin: 0 5%;
+    }
+    
+    .footer__li-img img {
+        width: 5vw;
+        margin: 50% 0 0 -110%;
     }
 
     .footer__ul-bottom {
