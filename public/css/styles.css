@@ -12,6 +12,7 @@
     color: #eee;
 }
 
+/* Header */
 .header{
     width: 100%;
     display: flex;
@@ -22,6 +23,7 @@
     top: 0;
 }
 
+/* Header primer fila */
 .header__primer-fila{
     display: flex;
     justify-content: space-between;
@@ -39,7 +41,9 @@
     padding: 5px;
     border-radius: 10px;
     display: flex;
-    gap: 2px
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
 }
 
 .cont-search__input{
@@ -48,6 +52,27 @@
     border: solid 1px #548ca8;
 }
 
+.cont-search__i{
+    width: 15px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.cont-i{
+    display: flex;
+    gap: 5px;
+}
+
+.cont-i__iconos{
+    cursor: pointer;
+    width: 40px;
+}
+
+.cont-i__iconos--burger-menu{
+    width: 35px;
+}
+
+/* Header navegador */
 .header__nav{
     width: 100%;
     position: fixed;
@@ -83,29 +108,13 @@
     color: #548ca8;
 }
 
-/* .check{
-    display: none;
-} */
-
-/* #check:checked ~ nav{
-        transform: translateX(-100%);
-} */
-
-.cont-i{
-    font-size: 25px;
-    display: flex;
-    gap: 10px;
-}
-
-.fa-shopping-cart, .fa-user{
-    cursor: pointer;
-}
-
+/* Main */
 .main{
     width: 100%;
     margin-top: 70px
 }
 
+/* Carrito */
 .carrito{
     display: flex;
     flex-direction: column;
@@ -148,18 +157,25 @@
     gap: 10px;
 }
 
+.carrito__i{
+    color: #eee;
+    width: 20px;
+}
+
 .carrito__cod{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
 
+/* Métodos de pago y pagar*/
+/* Elegir método de pago */
 .pagar-metodos{
     width: 100%;
     background-color: #548ca8;
     display: flex;
     flex-direction: column;
-    gap: 10px
+    gap: 10px;
 }
 
 .pagar-metodos__titulo{
@@ -191,6 +207,7 @@
     background-color: #476072;
 }
 
+/* Boton de pagar */
 .metodo-pago__pagar{
     margin: 0 auto;
 }
@@ -203,6 +220,7 @@
     color: #334257;
     border: solid 1px #eee;
     cursor: pointer;
+    margin-bottom: 10px;
     box-shadow: 2px 2px #000;
     transition: color .5s, background-color .5s
 }
@@ -217,8 +235,59 @@
     box-shadow: 0px 0px;
 }
 
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__primer-fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__ul{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__li-enlaces-generales{
+    text-decoration: none;
+    color: #eee;
+}
+
+.footer__li-met-pago{
+    width: 40px;
+}
+
+.footer__li-enlaces-generales,.footer__li-met-pago{
+    margin-left: 5px;
+}
+
+.footer__li-redes{
+    color: #000;
+    background-color: #eee;
+    border-top: solid 2px #eee;
+    border-left: solid 2px #eee;
+    border-bottom: solid 2px #808080;
+    border-right: solid 2px #808080;
+    border-radius: 45%;
+    padding: 10px;
+}
+
+/* Media queries */
 @media (min-width: 481px ) {
-    .burger-menu{
+    .cont-i__iconos--burger-menu{
         display: none;
     }
 
@@ -245,6 +314,10 @@
     .pagar-metodos__titulo{
         font-size: 1.5em;
     }
+
+    .footer__met-pago{
+        width: 50px;
+    }
 }
 
 @media (min-width: 769px) {
@@ -269,6 +342,11 @@
 
     .metodo-pago__label{
         border-right: solid 1px #548ca8;
+    }
+
+    .footer__primer-fila{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 

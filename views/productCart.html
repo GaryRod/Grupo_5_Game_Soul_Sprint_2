@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,19 +17,16 @@
             </div>
             
             <div class="cont-search">
-                <input type="search" placeholder="Dime que juego buscas" class="cont-search__input">
-                <i class="fas fa-search"></i>
+                <input type="search" placeholder="Dime que juego buscas" class="cont-search__input" id="search">
+                <label for="search"><img src="../public/images/search.svg" class="cont-search__i"></label> 
             </div>
             
             <div class="cont-i">
-                <i class="far fa-user"></i>
-                <i class="fas fa-shopping-cart"></i>
-                <label for="check" class="burger-menu">
-                    <i class="fas fa-bars"></i>
-                </label>
+                <img src="../public/images/user.svg" class="cont-i__iconos">
+                <img src="../public/images/shop.svg" class="cont-i__iconos">
+                <img src="../public/images/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
             </div>
         </div>
-        <!-- <input type="checkbox" id="check" class="check"> -->
 
         <nav class="header__nav">
             <ul class="header__lista">
@@ -55,7 +52,7 @@
                 </div>
 
                 <div class="carrito__i-precio-cant">
-                        <i class="fas fa-trash-alt"></i>
+                        <img src="../public/images/trash.svg" alt="" class="carrito__i">
                         <p>1</p>
                         <p>$ 1000</p>
                 </div>
@@ -72,7 +69,7 @@
                 </div>
 
                 <div class="carrito__i-precio-cant">
-                        <i class="fas fa-trash-alt"></i>
+                        <img src="../public/images/trash.svg" alt="" class="carrito__i">
                         <p>1</p>
                         <p>$ 1000</p>
                 </div>
@@ -89,7 +86,7 @@
                 </div>
 
                 <div class="carrito__i-precio-cant">
-                        <i class="fas fa-trash-alt"></i>
+                        <img src="../public/images/trash.svg" alt="" class="carrito__i">
                         <p>1</p>
                         <p>$ 1000</p>
                 </div>
@@ -114,7 +111,7 @@
                         </label>
                     </li>
                     <li class="metodo-pago__items">
-                        <label for="google-play" class="metodo-pago__label">Google Play
+                        <label for="google-play" class="metodo-pago__label">Google Pay
                             <input type="radio" id="google-play" name="pago">
                         </label>
                     </li>
@@ -130,10 +127,39 @@
                     </li>
                 </ul>
             </div>
+
             <div class="metodo-pago__pagar">
-                <button class="metodo-pago__boton">Pagar</button>
+                <button class="metodo-pago__boton">Comprar</button>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+            <div class="footer__primer-fila">
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Legal</a></li>
+                    <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Política</a></li>
+                    <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Cookies</a></li>
+                    <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Ayuda</a></li>
+                    <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Nosotros</a></li>
+                </ul>
+                
+                <ul class="footer__ul">
+                    <li class="footer__li"><img src="../public/images/mastercard.svg" class="footer__li-met-pago"></li>
+                    <li class="footer__li"><img src="../public/images/visa.svg" class="footer__li-met-pago"></li>
+                    <li class="footer__li"><img src="../public/images/mercado-pago.svg" class="footer__li-met-pago"></li>
+                    <li class="footer__li"><img src="../public/images/paypal.svg" class="footer__li-met-pago"></li>
+                    <li class="footer__li"><img src="../public/images/google-pay.svg" class="footer__li-met-pago"></li>
+                </ul>
+            </div>
+
+            <ul class="footer__ul">
+                <li class="footer__li"><a href="#"><i class="fab fa-facebook footer__li-redes"></i></a></li>
+                <li class="footer__li"><a href="#"><i class="fab fa-twitter footer__li-redes"></i></a></li>
+                <li class="footer__li"><a href="#"><i class="fab fa-instagram footer__li-redes"></i></a></li>
+                <li class="footer__li"><a href="#"><i class="fab fa-youtube footer__li-redes"></i></a></li>
+                <li class="footer__li"><a href="#"><i class="fab fa-pinterest footer__li-redes"></i></a></li>
+            </ul>
+    </footer>
 </body>
 </html>
