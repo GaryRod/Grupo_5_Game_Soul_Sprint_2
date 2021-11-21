@@ -153,8 +153,8 @@ body {
 }
 
 .footer__li-img img {
-    width: 15vw;
-    margin: 50% 0 0 -100%;
+    width: 200%;
+    margin: 5% 0 0 -100%;
 }
 
 .footer__li a {
@@ -209,8 +209,7 @@ body {
     }
     
     .footer__li-img img {
-        width: 12vw;
-        margin: 50% 0 0 -100%;
+        margin: 5% 0 0 -100%;
     }
 }
 
@@ -260,8 +259,7 @@ body {
     }
     
     .footer__li-img img {
-        width: 7vw;
-        margin: 50% 0 0 -100%;
+        margin: 5% 0 0 -100%;
     }
 }
 
@@ -308,11 +306,6 @@ body {
     .footer__li-img-mercadopago {
         max-width: 25px;
         margin: 0 5%;
-    }
-    
-    .footer__li-img img {
-        width: 5vw;
-        margin: 50% 0 0 -110%;
     }
 
     .footer__ul-bottom {
