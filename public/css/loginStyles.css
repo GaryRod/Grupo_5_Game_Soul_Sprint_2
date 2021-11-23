@@ -13,9 +13,8 @@ body {
 }
 
 .form {
-    width: 90%;
+    max-width: 90%;
     background-color: rgba(255, 255, 255, 0.8);
-    /* max-width: 90%; */
     margin: 2% auto;
     border-radius: 50px;
 }
@@ -59,8 +58,7 @@ body {
 
 .form__input {
     padding: 5px;
-    /* width: 90%; */
-    width: 50%;
+    width: 90%;
     margin: 5px;
     border-radius: 10px;
     border: 1px solid black;
@@ -70,8 +68,7 @@ body {
 
 .form__tercera-seccion {
     display: flex;
-    /* poner este codigo flex-direction: column; eliminar el space-between y adaptar en tablet y pc cambiando flex-directioncontent: '\F0999';row y agregar el space-between*/
-    justify-content: space-between;
+    flex-direction: column;
     margin: 10px;
     align-items: center;
 }
@@ -99,10 +96,8 @@ body {
     padding: 10px;
     width: 60%;
     border-radius: 10px;
-    /* negro a #000 */
-    border: solid 1px black;
-    /* cambiar codigo a hexadecimal  #eee*/
-    background-color:rgba(255, 255, 255, 0.8);
+    border: solid 1px #000;
+    background-color: #eee;
     transition: all 1s;
 }
 
@@ -196,9 +191,9 @@ body {
 
 
     .form__tercera-seccion {
-        justify-content: space-evenly;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .footer {
@@ -240,9 +235,9 @@ body {
         width: 25%;
     }
     .form__tercera-seccion {
-        justify-content: space-around;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .footer_ul {
@@ -292,8 +287,8 @@ body {
 
     .form__tercera-seccion {
         display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .form__boton-enviar {
