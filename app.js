@@ -8,7 +8,7 @@ app.use(express.static('views'));
 app.listen(process.env.PORT || 3000, () => console.log("Servidor funcionando en el puerto 3000 o el puerto definido en Heroku"));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/views/home.html');
+    res.sendFile(__dirname + '/views/home.html');
 })
 
 app.get('/login', (req, res) => {
