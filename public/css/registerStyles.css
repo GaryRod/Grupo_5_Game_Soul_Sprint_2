@@ -3,41 +3,49 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 .body-registro{
     background-color: #476072;
     width: 100%;
     height: 100vh;
 }
+
 .header-registro{
     background-color: #334257;
 }
+
 .section-registro{
     background-color: #548ca8;
 }
 
 .logo-img{
-    width: 35%;
+    width: 70px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .logo{
     text-align: center;
 }
+
 .titulo-registro{
     font-size: 15px;
     text-align: center;
     color: #EEEEEE;
     padding: 15px;
 }
+
 .lista-iconos-registro{
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 0 0 5px 0;
 }
+
 .lista-iconos-registro li a{
     color: inherit;
 }
+
 .iconos-facebook, .iconos-twitter, .iconos-instagram{
     font-size: 20px;
     margin: 0px 20px;
@@ -47,6 +55,7 @@
     padding: 7px 9px;
     background-color: #eee;
 }
+
 .form-registro{
     font-size: 12px;
     color:#EEEEEE;
@@ -55,14 +64,15 @@
 }
 .nombre-registro{
     padding-right: 9%;
-   
 }
 .email-registro{
     padding-right:11.5%;
 }
+
 .contraseña-registro{
     padding-right: 2%;
 }
+
 .input-nombre, .input-email, .input-contraseña{
     width: 56%;
     height: 15px; 
@@ -70,9 +80,11 @@
     border: #646161 1px solid;
     padding: 10px 0 0 0;
 }
+
 .fechaDeNacimiento-registro{
     padding-right: 19px;
 }
+
 .input-fechaNacimiento{
     width: 46%;
     height: 16px;
@@ -81,6 +93,7 @@
     color: #646161;
     text-align: center;
 }
+
 .contenedor-tyc{
     text-align: center;
     font-size: 15px;
@@ -90,31 +103,46 @@
     margin: 10px;
     margin-bottom: 5px;
 }
+
 .contenedor-botonCrear{
     text-align: center;
     margin: 15px;
 }
+
 .button-crearCuenta, .button-iniciarSesion{
-    color: #646161;
-    padding: 2px;
-    border-radius: 20%;
-    border: solid 1px #646161;
+    color: #000000;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: solid 1px #000;
+    background-color: #eee;
+    transition: all 1s;
+    cursor: pointer
 }
+
+.button-crearCuenta:hover, .button-iniciarSesion:hover{
+    background-color: #476072;
+    color: white;
+}
+
 .contenedor-iniciarSesion{
     text-align: center;
     padding-bottom: 15px;
 }
+
 .tenesCuenta-registro{
     margin-right: 9%;
     font-size: 15px;
 }
+
 .contenedor-nombreRegistro, .contenedor-emailRegistro, .contenedor-contraseña{
     margin-bottom: 15px;
 }
+
 .contenedor-fechaDeNacimiento{
     margin-bottom: 10px;
 }
-
 
 /* Footer */
 .footer{
@@ -165,49 +193,46 @@
     border-radius: 45%;
     padding: 10px;
 }
-@media (min-width: 481px){
-    .logo-img{
-        width: 25%;
-    }
+
+@media (min-width: 480px){
+
     .email-registro{
         padding-right:11%;
     }
+
     .contraseña-registro{
         padding-right: 3.3%;
     }
+
     .iconos-facebook, .iconos-twitter, .iconos-instagram{
         font-size: 25px;
         padding: 7px 10px;
     }
-    .titulo-registro{
-        font-size: 20px;
-    }
-    .form-registro{
-        font-size: 15px;
-    }
+
     .contenedor-tyc{
         font-size: 20px;
     }
-    .button-crearCuenta, .button-iniciarSesion{
-        padding: 5px;
+
+    .button-crearCuenta, .button-iniciarSesion {
+        width: 40%;
     }
+
     .tenesCuenta-registro{
         font-size: 20px;
     }
+
     .input-nombre, .input-email, .input-contraseña{
         height: 22px;
         padding: 10px;
         font-size: 15px;
     }
+
     .input-fechaNacimiento{
         height: 25px;
         font-size: 15px;
         text-align: center;
     }
-    .input-checkbox{
-        transform: scale(2);
-        margin: 0 20px;
-    }
+
     .contenedor-fechaDeNacimiento{
         margin-bottom: 20px;
     }
@@ -219,62 +244,31 @@
 }
 @media (min-width: 769px){
     .logo-img{
-        width: 10%;
+        width: 150px;
     }
+
     .email-registro{
         padding-right:10.3%;
     }
+
     .contraseña-registro{
         padding-right: 5.6%;
     }
     .iconos-facebook, .iconos-twitter, .iconos-instagram{
-       /* font-size: 50px;*/
         margin: 0 50px;
         padding: 8px 12px;
     }
+
     .lista-iconos-registro{
         margin: 10px 0 25px 0;
     }
-    .titulo-registro{
-        font-size: 16px;
+
+    .button-crearCuenta, .button-iniciarSesion {
+        width: 25%;
     }
-    .form-registro{
-        font-size: 15px;
-    }
-    .contenedor-tyc{
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-    .button-crearCuenta, .button-iniciarSesion{
-        padding: 12px;
-        font-size: 12px;
-    }
-    .tenesCuenta-registro{
-        font-size: 22px;
-    }
-    .input-nombre, .input-email, .input-contraseña{
-        height: 22px;
-    }
+
     .input-fechaNacimiento{
-        height: 422x;
-        font-size: 15px;
         text-align: center;
-    }
-    .contenedor-nombreRegistro, .contenedor-emailRegistro, .contenedor-contraseña{
-        margin-bottom: 25px;
-    }
-    .contenedor-fechaDeNacimiento{
-        margin-bottom: 30px;
-    }
-    .contenedor-iniciarSesion{
-        padding-bottom: 25px;
-    }
-    .contenedor-botonCrear{
-        margin: 25px;
-    }
-    .input-checkbox{
-        transform: scale(2);
-        margin: 0 35px;
     }
 
     /* Footer */

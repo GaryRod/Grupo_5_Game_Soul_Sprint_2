@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/stylesproductCart-index.css">
+    <link rel="stylesheet" href="../css/productCartStyles.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Game Soul</title>
@@ -22,8 +22,14 @@
             </form>
 
             <div class="cont-i">
-                <img src="../images/user.svg" class="cont-i__iconos">
-                <img src="../images/shop.svg" class="cont-i__iconos">
+                <div class="cont-i__cont-lista-icono">
+                    <img src="../images/user.svg" class="cont-i__iconos con-i__iconos--user">
+                    <ul class="cont-i__lista">
+                        <li class="cont-i__items cont-i__items-log"><a href="/login" class="cont-i__enlaces">Login</a></li>
+                        <li class="cont-i__items"><a href="/register" class="cont-i__enlaces">Register</a></li>
+                    </ul>
+                </div>
+                <a href="productCart.html"><img src="../images/shop.svg" class="cont-i__iconos"></a>
                 <img src="../images/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
             </div>
         </div>
@@ -40,7 +46,7 @@
     </header>
 
     <main class="main">
-        <form method="POST" action="index.html">
+        <form method="POST" action="/">
             <section class="carrito">
                 <div class="carrito__juegos">
                     <div class="carrito__img-juego">

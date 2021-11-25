@@ -11,11 +11,14 @@
     <title>Login</title>
 </head>
 <body>
+    <header class="header-registro">
+        <div class="logo">
+            <a href="index.html"><img src="/images/Game-Soul.png" class="logo-img"></a>
+        </div>
+    </header>
+
     <main>
         <form action="/login" method="post" class="form">
-            <div class="form__logo">
-                <a href="index.html"><img src="../images/Game-Soul.png" class="form__img"></a>
-            </div>
             <div class="form__segunda-seccion">
                 <div class="form__contenedor-subtitulos">
                     <span class="form__subtitulo-login">Login</span>
@@ -28,7 +31,7 @@
             </div>
             <div class="form__tercera-seccion">
                 <div class="form__contenedor-checkbox">
-                    <input type="checkbox" class="form__boton-checkbox"><span class="form__span">Recuérdame</span>
+                    <input type="checkbox" id="recuerdame" class="form__boton-checkbox"><label for="recuerdame" class="form__span">Recuérdame</label>
                 </div>
                 <div class="form__contenedor-a">
                     <a href="#" class="form__a">¿Olvidaste tu Contraseña?</a>
@@ -39,6 +42,7 @@
             </div>
         </form>
     </main>
+    
     <footer class="footer">
         <div class="footer__primer-fila">
             <ul class="footer__ul">

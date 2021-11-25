@@ -162,8 +162,7 @@ main{
     align-items: center;
     background-color: #548ca8;
     width: 90%;
-    
-    
+    height: 100%;
 }
 .nombre__juego{
     padding: 5px;
@@ -312,7 +311,11 @@ img{
 }
 .añadir__carrito:hover,.añadir__favoritos:hover{
     background-color: #074e07;
+}
 
+.añadir__carrito:hover,.añadir__favoritos:hover{
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
 }
 
 .video__detalles{
@@ -361,6 +364,7 @@ img{
 .cont__detalles{
     padding: 20px;
     text-align: start;
+    overflow: hidden;
 }
 
 .footer{
@@ -480,14 +484,14 @@ img{
     }
 
     main{
-        margin-top:120px
+        margin-top:120px;
     }
     .juego{
-        margin-top: 30px;
         position: relative;
         flex-direction: row;
         flex-wrap: wrap;
         z-index: -10;
+
     }
     .img__juego{
         width: 50%;
@@ -526,19 +530,18 @@ img{
         padding: 5px 10px;
     }
     main{
-        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        
+        justify-content: center;
     }
     .juego{
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         width: 40%;
         margin-left: 15px;
         align-items: flex-start;
-        padding-left:20px ;
+        padding-left:20px;
+        height: 710px;
     }
     .img__juego{
         border:none;
@@ -555,7 +558,6 @@ img{
     
     }
     .detalles{
-        margin-top: 40px;
         display: flex;
         flex-direction: column;
         width: 60%;
