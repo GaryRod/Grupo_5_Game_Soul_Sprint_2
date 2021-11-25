@@ -63,7 +63,44 @@
 
 .cont-i{
     display: flex;
+    align-items: center;
     gap: 5px;
+}
+
+.cont-i__cont-lista-icono{
+    position: relative;
+}
+
+.cont-i__lista{
+    position: absolute;
+    list-style: none;
+    border: solid 1px #334257;
+    display: none;
+    border-radius: 5px;
+    background-color: #eee;
+    transform: translateX(-15px);
+}
+
+.cont-i__cont-lista-icono:hover .cont-i__lista{
+    display: block;
+}
+
+.cont-i__enlaces{
+    color: #334257;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.cont-i__enlaces:hover{
+    background-color: #548ca8;
+    color: #eee;
+}
+
+.cont-i__items-log{
+    border-bottom: solid 1px #334257;
 }
 
 .cont-i__iconos{
@@ -476,8 +513,12 @@
         margin-top: 120px;
     }
 
-    /* Index */
+    
+    .cont-search{
+        width: 50%;
+    }
 
+    /* Index */
     .main--index{
         padding: 0 3%
     }
@@ -535,14 +576,11 @@
         padding: 20px;
     }
 
-    .cont-search{
-        width: 50%;
-    }
-
     .pagar-metodos__titulo{
         font-size: 1.5em;
     }
 
+    /* Footer */
     .footer__met-pago{
         width: 50px;
     }
@@ -582,6 +620,7 @@
         border-right: solid 1px #548ca8;
     }
 
+    /* Footer */
     .footer__primer-fila{
         flex-direction: row;
         justify-content: space-between;

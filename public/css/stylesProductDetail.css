@@ -12,7 +12,7 @@ body{
     color: #eee;
 }
 
-/* headder */
+/* Header */
 .header{
     width: 100%;
     display: flex;
@@ -21,9 +21,10 @@ body{
     margin-bottom: 10px;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
-/* primera fila */
+/* Header primer fila */
 .header__primer-fila{
     display: flex;
     justify-content: space-between;
@@ -36,13 +37,9 @@ body{
     width: 60px;
 }
 
-.header__lista{
-    display: none;
-}
-
 .cont-search{
     background-color: #548ca8;
-    padding: 5px;
+    padding: 3px;
     border-radius: 10px;
     display: flex;
     gap: 2px;
@@ -51,10 +48,11 @@ body{
 }
 
 .cont-search__input{
-    width: 90%;
+    width: 100%;
     border-radius: 5px;
     border: solid 1px #548ca8;
 }
+
 .cont-search__i{
     width: 15px;
     cursor: pointer;
@@ -63,12 +61,53 @@ body{
 
 .cont-i{
     display: flex;
+    align-items: center;
     gap: 5px;
+}
+
+.cont-i__cont-lista-icono{
+    position: relative;
+}
+
+.cont-i__lista{
+    position: absolute;
+    list-style: none;
+    border: solid 1px #334257;
+    display: none;
+    border-radius: 5px;
+    background-color: #eee;
+    transform: translateX(-15px);
+}
+
+.cont-i__cont-lista-icono:hover .cont-i__lista{
+    display: block;
+}
+
+.cont-i__enlaces{
+    color: #334257;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.cont-i__enlaces:hover{
+    background-color: #548ca8;
+    color: #eee;
+}
+
+.cont-i__items-log{
+    border-bottom: solid 1px #334257;
 }
 
 .cont-i__iconos{
     cursor: pointer;
     width: 40px;
+}
+
+.cont-i__iconos--user{
+    position: relative;
 }
 
 .cont-i__iconos--burger-menu{
@@ -77,7 +116,6 @@ body{
 
 /* Header navegador */
 .header__nav{
-    width: 100%;
     position: fixed;
     top: 60px;
     left: 100%;
@@ -110,7 +148,6 @@ body{
     background-color: #eee;
     color: #548ca8;
 }
-
 main{
     display: flex;
     flex-direction: column;
@@ -375,6 +412,56 @@ img{
     padding: 10px;
 }
 
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__primer-fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__ul{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__li-enlaces-generales{
+    text-decoration: none;
+    color: #eee;
+}
+
+.footer__li-met-pago{
+    width: 40px;
+}
+
+.footer__li-enlaces-generales,.footer__li-met-pago{
+    margin-left: 5px;
+}
+
+.footer__li-redes{
+    color: #000;
+    background-color: #eee;
+    border-top: solid 2px #eee;
+    border-left: solid 2px #eee;
+    border-bottom: solid 2px #808080;
+    border-right: solid 2px #808080;
+    border-radius: 45%;
+    padding: 10px;
+}
+
 @media (min-width: 481px ) {
     .cont-i__iconos--burger-menu{
         display: none;
@@ -383,13 +470,17 @@ img{
     .header__lista{
         flex-direction: row;
     }
-
-    .main{
-        margin-top: 120px;
-    }
-
+    
     .header__nav{
         position: static;
+    }
+
+    .cont-search{
+        width: 50%;
+    }
+
+    main{
+        margin-top:120px
     }
     .juego{
         margin-top: 30px;
@@ -422,6 +513,8 @@ img{
         display: flex;
         align-items: center;
     }
+
+    /* Footer */
     .footer__met-pago{
         width: 50px;
     }
@@ -474,10 +567,9 @@ img{
     .img__juego{
         width: 90%;
     }
+     /* Footer */
     .footer__primer-fila{
         flex-direction: row;
         justify-content: space-between;
     }
-
-    
 }

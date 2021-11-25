@@ -13,17 +13,23 @@
     <header class="header">
         <div class="header__primer-fila">
             <div>
-                <a href="#"><img src="../images/Game-Soul.png" alt="logo" class="header__logo"></a>
+                <a href="index.html"><img src="../images/Game-Soul.png" alt="logo" class="header__logo"></a>
             </div>
-            
-            <div class="cont-search">
-                <input type="search" placeholder="Dime que juego buscas" class="cont-search__input">
-                <label for="search"><img src="../images/search.svg" class="cont-search__i"></label>
-            </div>
-            
+
+            <form class="cont-search">
+                <input type="search" placeholder="Dime que juego buscas" class="cont-search__input" id="search">
+                <label for="search"><img src="../images/search.svg" class="cont-search__i"></label> 
+            </form>
+
             <div class="cont-i">
-                <img src="../images/user.svg" class="cont-i__iconos">
-                <img src="../images/shop.svg" class="cont-i__iconos">
+                <div class="cont-i__cont-lista-icono">
+                    <img src="../images/user.svg" class="cont-i__iconos con-i__iconos--user">
+                    <ul class="cont-i__lista">
+                        <li class="cont-i__items cont-i__items-log"><a href="login.html" class="cont-i__enlaces">Login</a></li>
+                        <li class="cont-i__items"><a href="register.html" class="cont-i__enlaces">Register</a></li>
+                    </ul>
+                </div>
+                <a href="productCart.html"><img src="../images/shop.svg" class="cont-i__iconos"></a>
                 <img src="../images/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
             </div>
         </div>
@@ -38,13 +44,14 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="juego ">
             <div class="nombre__juego">
                 Assassin's creed valhalla
             </div>
             <div class="img__juego">
-                <img src="../images/ACValhalla.jpg" alt="Assassin-creed-valhalla" >
+                <img src="../images/ACValhalla-250px.jpg" alt="Assassin-creed-valhalla" >
             </div>
             <div class="plataformas">
                 Plataformas
@@ -97,7 +104,8 @@
 
         </section>
     </main>
-    <footer>
+
+    <footer class="footer">
         <div class="footer__primer-fila">
             <ul class="footer__ul">
                 <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Legal</a></li>
@@ -106,7 +114,7 @@
                 <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Ayuda</a></li>
                 <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Nosotros</a></li>
             </ul>
-            
+
             <ul class="footer__ul">
                 <li class="footer__li"><img src="../images/mastercard.svg" class="footer__li-met-pago"></li>
                 <li class="footer__li"><img src="../images/visa.svg" class="footer__li-met-pago"></li>
@@ -120,10 +128,9 @@
             <li class="footer__li"><a href="#"><i class="fab fa-facebook footer__li-redes"></i></a></li>
             <li class="footer__li"><a href="#"><i class="fab fa-twitter footer__li-redes"></i></a></li>
             <li class="footer__li"><a href="#"><i class="fab fa-instagram footer__li-redes"></i></a></li>
-            <li class="footer__li"><a href="#"><i class="fab fa-youtube footer__li-redes"></i></a></li>
+            <li class="footer__li"><a href="#"><i class="fab fa-linkedin footer__li-redes"></i></a></li>
             <li class="footer__li"><a href="#"><i class="fab fa-pinterest footer__li-redes"></i></a></li>
         </ul>
-
     </footer>
 </body>
 </html>

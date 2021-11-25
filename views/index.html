@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="stylesheet" href="../css/stylesproductCart-index.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Game Soul</title>
 </head>
@@ -12,18 +13,24 @@
     <header class="header">
         <div class="header__primer-fila">
             <div>
-                <a href="index.html"><img src="../public/images/Game-Soul.png" alt="logo" class="header__logo"></a>
+                <a href="index.html"><img src="../images/Game-Soul.png" alt="logo" class="header__logo"></a>
             </div>
 
             <form class="cont-search">
                 <input type="search" placeholder="Dime que juego buscas" class="cont-search__input" id="search">
-                <label for="search"><img src="../public/images/search.svg" class="cont-search__i"></label> 
+                <label for="search"><img src="../images/search.svg" class="cont-search__i"></label> 
             </form>
 
             <div class="cont-i">
-                <img src="../public/images/user.svg" class="cont-i__iconos con-i__iconos--user">
-                <a href="productCart.html"><img src="../public/images/shop.svg" class="cont-i__iconos"></a>
-                <img src="../public/images/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
+                <div class="cont-i__cont-lista-icono">
+                    <img src="../images/user.svg" class="cont-i__iconos con-i__iconos--user">
+                    <ul class="cont-i__lista">
+                        <li class="cont-i__items cont-i__items-log"><a href="login.html" class="cont-i__enlaces">Login</a></li>
+                        <li class="cont-i__items"><a href="register.html" class="cont-i__enlaces">Register</a></li>
+                    </ul>
+                </div>
+                <a href="productCart.html"><img src="../images/shop.svg" class="cont-i__iconos"></a>
+                <img src="../images/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
             </div>
         </div>
 
@@ -45,7 +52,7 @@
                 <picture class="section-ppal__picture">
                     <source media="(max-width: 480px)" srcset="">
                     <source media="(max-width: 769px)" srcset="">
-                    <img src="../public/images/COD-Black-Ops-4-350.jpg" alt="COD: Black Ops" class="section-ppal__img">
+                    <img src="../images/COD-Black-Ops-4-350.jpg" alt="COD: Black Ops" class="section-ppal__img">
                 </picture>
                 <div class="section-ppal__datos-imgs-button">
                     <div class="section-ppal__datos">
@@ -58,21 +65,21 @@
                         <div class="section-ppal__cont-imgs">
                             <div class="section-ppal__cont-div-imgs">
                                 <div class="section-ppal__div-imgs">
-                                    <img src="../public/images/COD-Black-Ops-4-1.jpg" alt="COD-1" class="section-ppal__imgs">
+                                    <img src="../images/COD-Black-Ops-4-1.jpg" alt="COD-1" class="section-ppal__imgs">
                                 </div>
-                                
+
                                 <div class="section-ppal__div-imgs">
-                                    <img src="../public/images/COD-Black-Ops-4-2.jpg" alt="COD-2" class="section-ppal__imgs">
+                                    <img src="../images/COD-Black-Ops-4-2.jpg" alt="COD-2" class="section-ppal__imgs">
                                 </div>
                             </div>
 
                             <div class="section-ppal__cont-div-imgs">
                                 <div class="section-ppal__div-imgs">
-                                    <img src="../public/images/COD-Black-Ops-4-3.jpg" alt="COD-3" class="section-ppal__imgs">
+                                    <img src="../images/COD-Black-Ops-4-3.jpg" alt="COD-3" class="section-ppal__imgs">
                                 </div>
-                                
+
                                 <div class="section-ppal__div-imgs">
-                                    <img src="../public/images/COD-Black-Ops-4-4.jpg" alt="COD-4" class="section-ppal__imgs">
+                                    <img src="../images/COD-Black-Ops-4-4.jpg" alt="COD-4" class="section-ppal__imgs">
                                 </div>
                             </div>
                         </div>
@@ -90,25 +97,26 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/cyberpunk-2077-250px.jpg" alt="Cyber Punk 2077" class="section-sec__imgs">
+                            <img src="../images/cyberpunk-2077-250px.jpg" alt="Cyber Punk 2077" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
                         </div>
                     </div>
+
                     <div class="section-sec__cont-datos">
                         <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">Cyber Punk 2077</a></span>
                         <span class="section-sec__spans">Precio</span>
                         <span class="button-carrito">Añadir al carrito</span>
                     </div>
                 </article>
-                
+
                 <article class="section-sec__arts">
                     <div class="section-sec__cont-picture-star">
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/fifa-22-250px.jpg" alt="Fifa 22" class="section-sec__imgs">
+                            <img src="../images/fifa-22-250px.jpg" alt="Fifa 22" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -126,7 +134,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/forza-horizon-5-250px.jpg" alt="Forza Horizon" class="section-sec__imgs">
+                            <img src="../images/forza-horizon-5-250px.jpg" alt="Forza Horizon" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -144,7 +152,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/battlefield.jpg" alt="Battlefield" class="section-sec__imgs">
+                            <img src="../images/battlefield.jpg" alt="Battlefield" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -162,7 +170,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/God_of_War-150px.jpg" alt="GOW 4" class="section-sec__imgs">
+                            <img src="../images/God_of_War-150px.jpg" alt="GOW 4" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -180,7 +188,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/age-of-empires-4-150px.jpg" alt="AOE 4" class="section-sec__imgs">
+                            <img src="../images/age-of-empires-4-150px.jpg" alt="AOE 4" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -203,7 +211,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/yakuza-kiwami-250px.jpg" alt="Yakuza Kiwami" class="section-sec__imgs">
+                            <img src="../images/yakuza-kiwami-250px.jpg" alt="Yakuza Kiwami" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -221,7 +229,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/inscryption-250px.jpg" alt="Inscription" class="section-sec__imgs">
+                            <img src="../images/inscryption-250px.jpg" alt="Inscription" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -239,14 +247,14 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/ACValhalla-250px.jpg" alt="Assassin's Creed: Valhalla" class="section-sec__imgs">
+                            <img src="../images/ACValhalla-250px.jpg" alt="Assassin's Creed: Valhalla" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
                         </div>
                     </div>
                     <div class="section-sec__cont-datos">
-                        <span class="section-sec__spans"><a href="" class="section-sec__titulo-enlace">AC: Valhalla</a></span>
+                        <span class="section-sec__spans"><a href="productDetail.html" class="section-sec__titulo-enlace">AC: Valhalla</a></span>
                         <span class="section-sec__spans">Precio</span>
                         <span class="button-carrito">Añadir al carrito</span>
                     </div>
@@ -257,7 +265,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/God_of_War-150px.jpg" alt="GOW 4" class="section-sec__imgs">
+                            <img src="../images/God_of_War-150px.jpg" alt="GOW 4" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -275,7 +283,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/fifa-22-250px.jpg" alt="Fifa 22" class="section-sec__imgs">
+                            <img src="../images/fifa-22-250px.jpg" alt="Fifa 22" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -293,7 +301,7 @@
                         <picture class="section-sec__picture">
                             <source media="(min-width: )" srcset="">
                             <source media="(min-width: )" srcset="">
-                            <img src="../public/images/forza-horizon-5-250px.jpg" alt="Forza Horizon" class="section-sec__imgs">
+                            <img src="../images/forza-horizon-5-250px.jpg" alt="Forza Horizon" class="section-sec__imgs">
                         </picture>
                         <div class="section-sec__cont-star">
                             <i class="fas fa-star section-sec__star"></i>
@@ -320,11 +328,11 @@
             </ul>
 
             <ul class="footer__ul">
-                <li class="footer__li"><img src="../public/images/mastercard.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../public/images/visa.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../public/images/mercado-pago.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../public/images/paypal.svg" class="footer__li-met-pago"></li>
-                <li class="footer__li"><img src="../public/images/google-pay.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/mastercard.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/visa.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/mercado-pago.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/paypal.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/google-pay.svg" class="footer__li-met-pago"></li>
             </ul>
         </div>
 
@@ -335,6 +343,6 @@
             <li class="footer__li"><a href="#"><i class="fab fa-linkedin footer__li-redes"></i></a></li>
             <li class="footer__li"><a href="#"><i class="fab fa-pinterest footer__li-redes"></i></a></li>
         </ul>
-</footer>
+    </footer>
 </body>
 </html>

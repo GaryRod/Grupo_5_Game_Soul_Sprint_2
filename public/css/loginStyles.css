@@ -105,73 +105,55 @@ body {
     background-color: #476072;
     color: white;
 }
-
-.footer {
-    width: 90%;
-}
-
-.footer__nav {
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    font-size: 80%;
-    justify-content: space-evenly;
+}
+
+.footer__primer-fila{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.footer__ul {
+.footer__ul{
+    font-size: 80%;
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    margin: 0 0 0 -5%;
-}
-
-.footer__nav-bottom {
-    display: flex;
-    margin: 0 0 0 -4%;
+    align-items: center;
     justify-content: center;
-
+    gap: 5px;
 }
 
-.footer__ul-bottom {
-    display: flex;
-    margin: 0 0 0 -1%;
-}
-
-.footer__li {
-    list-style: none;
-    text-align: left;
-}
-
-.footer__li-img {
+.footer__li{
     list-style: none;
 }
 
-.footer__li-img i {
-    margin: 10px;
-}
-
-.footer__li-img-mercadopago {
-    max-width: 25px;
-    margin: 0 5%;
-}
-
-.footer__li-img img {
-    width: 200%;
-    margin: 5% 0 0 -100%;
-}
-
-.footer__li a {
+.footer__li-enlaces-generales{
     text-decoration: none;
+    color: #eee;
 }
 
-.footer__li-button {
+.footer__li-met-pago{
+    width: 40px;
+}
+
+.footer__li-enlaces-generales,.footer__li-met-pago{
+    margin-left: 5px;
+}
+
+.footer__li-redes{
+    color: #000;
+    background-color: #eee;
+    border-top: solid 2px #eee;
+    border-left: solid 2px #eee;
+    border-bottom: solid 2px #808080;
+    border-right: solid 2px #808080;
     border-radius: 45%;
-    padding: 1px;
-    background-color: #c08181;
+    padding: 10px;
 }
-
-
-
 .icono {
     color: #000000;
 }
@@ -196,23 +178,10 @@ body {
         justify-content: space-between;
     }
 
-    .footer {
-        width: 100%;
-    }
-
-    .footer__nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer__li-img-mercadopago {
-        max-width: 25px;
-        margin: 0 5%;
-    }
-    
-    .footer__li-img img {
-        margin: 5% 0 0 -100%;
+   
+    /* Footer */
+    .footer__met-pago{
+        width: 50px;
     }
 }
 
@@ -240,29 +209,10 @@ body {
         justify-content: space-between;
     }
 
-    .footer_ul {
-        margin: 1px auto;
-    }
-
-    .footer__nav {
-        display: flex;
+    /* Footer */
+    .footer__primer-fila{
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin: 0 -3% 0 -1%;
-    }
-
-    .footer__ul-bottom {
-        margin: 0 0 0 1%;
-    }
-
-    .footer__li-img-mercadopago {
-        max-width: 25px;
-        margin: 0 5%;
-    }
-    
-    .footer__li-img img {
-        margin: 5% 0 0 -100%;
+        justify-content: space-between;
     }
 }
 
@@ -293,25 +243,5 @@ body {
 
     .form__boton-enviar {
         width: 25%;
-    }
-
-    .footer {
-        width: 100%;
-    }
-
-    .footer__nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer__li-img-mercadopago {
-        max-width: 25px;
-        margin: 0 5%;
-    }
-
-    .footer__ul-bottom {
-        margin: 0 0 0 1%;
     }
 }

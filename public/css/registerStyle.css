@@ -108,6 +108,57 @@
 .contenedor-fechaDeNacimiento{
     margin-bottom: 10px;
 }
+
+
+/* Footer */
+.footer{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__primer-fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__ul{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__li-enlaces-generales{
+    text-decoration: none;
+    color: #eee;
+}
+
+.footer__li-met-pago{
+    width: 40px;
+}
+
+.footer__li-enlaces-generales,.footer__li-met-pago{
+    margin-left: 5px;
+}
+
+.footer__li-redes{
+    color: #000;
+    background-color: #eee;
+    border-top: solid 2px #eee;
+    border-left: solid 2px #eee;
+    border-bottom: solid 2px #808080;
+    border-right: solid 2px #808080;
+    border-radius: 45%;
+    padding: 10px;
+}
 @media (min-width: 481px){
     .logo-img{
         width: 25%;
@@ -145,6 +196,11 @@
     }
     .contenedor-fechaDeNacimiento{
         margin-bottom: 20px;
+    }
+
+     /* Footer */
+    .footer__met-pago{
+        width: 50px;
     }
 }
 @media (min-width: 769px){
@@ -199,5 +255,11 @@
     .input-checkbox{
         transform: scale(3);
         margin: 0 35px;
+    }
+
+    /* Footer */
+    .footer__primer-fila{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
