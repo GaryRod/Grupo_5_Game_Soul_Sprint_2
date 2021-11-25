@@ -42,10 +42,10 @@
     font-size: 20px;
     margin: 0px 20px;
     margin-bottom: 10px;
-    border: solid 1px black;
+    border: solid 1px #808080;
     border-radius: 50%;
     padding: 7px 9px;
-    background-color: #c08181;
+    background-color: #eee;
 }
 .form-registro{
     font-size: 12px;
@@ -53,9 +53,15 @@
     padding: 0 10% 0 10%;
     text-align: left;
 }
-.nombre-registro, .email-registro, .contraseña-registro{
+.nombre-registro{
     padding-right: 9%;
    
+}
+.email-registro{
+    padding-right:11.5%;
+}
+.contraseña-registro{
+    padding-right: 2%;
 }
 .input-nombre, .input-email, .input-contraseña{
     width: 56%;
@@ -163,6 +169,12 @@
     .logo-img{
         width: 25%;
     }
+    .email-registro{
+        padding-right:11%;
+    }
+    .contraseña-registro{
+        padding-right: 3.3%;
+    }
     .iconos-facebook, .iconos-twitter, .iconos-instagram{
         font-size: 25px;
         padding: 7px 10px;
@@ -184,6 +196,8 @@
     }
     .input-nombre, .input-email, .input-contraseña{
         height: 22px;
+        padding: 10px;
+        font-size: 15px;
     }
     .input-fechaNacimiento{
         height: 25px;
@@ -205,39 +219,45 @@
 }
 @media (min-width: 769px){
     .logo-img{
-        width: 30%;
+        width: 10%;
+    }
+    .email-registro{
+        padding-right:10.3%;
+    }
+    .contraseña-registro{
+        padding-right: 5.6%;
     }
     .iconos-facebook, .iconos-twitter, .iconos-instagram{
-        font-size: 50px;
+       /* font-size: 50px;*/
         margin: 0 50px;
-        padding: 7px 15px;
+        padding: 8px 12px;
     }
     .lista-iconos-registro{
         margin: 10px 0 25px 0;
     }
     .titulo-registro{
-        font-size: 35px;
+        font-size: 16px;
     }
     .form-registro{
-        font-size: 30px;
+        font-size: 15px;
     }
     .contenedor-tyc{
-        font-size: 35px;
+        font-size: 25px;
         margin-bottom: 25px;
     }
     .button-crearCuenta, .button-iniciarSesion{
-        padding: 20px;
-        font-size: 22px;
+        padding: 12px;
+        font-size: 12px;
     }
     .tenesCuenta-registro{
-        font-size: 35px;
+        font-size: 22px;
     }
     .input-nombre, .input-email, .input-contraseña{
-        height: 35px;
+        height: 22px;
     }
     .input-fechaNacimiento{
-        height: 40px;
-        font-size: 30px;
+        height: 422x;
+        font-size: 15px;
         text-align: center;
     }
     .contenedor-nombreRegistro, .contenedor-emailRegistro, .contenedor-contraseña{
@@ -253,7 +273,7 @@
         margin: 25px;
     }
     .input-checkbox{
-        transform: scale(3);
+        transform: scale(2);
         margin: 0 35px;
     }
 
