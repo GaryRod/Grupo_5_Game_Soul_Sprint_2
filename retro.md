@@ -7,13 +7,13 @@ Para nuestra retrospectiva, usaremos la dinámica de la estrella de mar, la cual
 
 1) Comenzar a hacer: Reuniones diarias (Dailys).
 
-2) Mayor comunicación;
+2) Mayor comunicación, mayor participación de los miembros, mejor distribución de tareas;
 
 3) Intentar mantener pautas;
 
 4) Hacer menos por nuestra cuenta;
 
-5) No revisar bien los pedido para implementar mejores pautas
+5) Dejar de hacer :red_circle:: No revisar bien lo pedido para implementar mejores pautas;
 
 # Tablero de trabajo (Trello)
 
