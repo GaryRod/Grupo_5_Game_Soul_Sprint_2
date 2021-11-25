@@ -7,6 +7,14 @@ Para nuestra retrospectiva, usaremos la dinámica de la estrella de mar, la cual
 
 1) Comenzar a hacer: Reuniones diarias (Dailys).
 
+2) Mayor comunicación;
+
+3) Intentar mantener pautas;
+
+4) Hacer menos por nuestra cuenta;
+
+5) No revisar bien los pedido para implementar mejores pautas
+
 # Tablero de trabajo (Trello)
 
 https://trello.com/b/atlpFJBU/the-pushers
