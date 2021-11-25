@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="/css/registerStyle.css" rel="stylesheet">
+    <title>Registro</title>
+</head>
+
+<body class="body-registro">
+     <div class="contenedor-todoElRegistro">
+    <header class="header-registro">
+      <div class="logo">
+          <img src="/images/Game-Soul.png" class="logo-img">
+      </div>
+    </header>
+    <main>
+        <section class="section-registro">
+            <div>
+                <p class="titulo-registro">CREA TU CUENTA  O REGISTRATE CON TUS REDES SOCIALES</p>
+            </div>
+            <div class="contenedor-iconos-registro">
+                <ul class="lista-iconos-registro">
+                    <li class="iconos-facebook"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="iconos-twitter"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                    <li class="iconos-instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="form-registro">
+                <form action="#" method="post" class="form-contenedor">
+                  <div class="contenedor-nombreRegistro">
+                    <label class="nombre-registro">NOMBRE</label>
+                        <input type="text" name="nombre" class="input-nombre" required>
+                  </div>
+                  <div class="contenedor-emailRegistro">
+                    <label class="email-registro">E-MAIL</label>
+                        <input type="email" name="email" class="input-email" required>
+                  </div>
+                  <div class="contenedor-contraseña">
+                    <label class="contraseña-registro">CONTRASEÑA</label>
+                        <input type="password" name="contraseña" class="input-contraseña" required>
+                    </div>
+                  <div class="contenedor-fechaDeNacimiento">
+                    <label class="fechaDeNacimiento-registro">FECHA DE NACIMIENTO</label>
+                        <input type="date" name="fechaNacimiento" class="input-fechaNacimiento" required>
+                  </div>  
+                  <div class="contenedor-tyc">
+                        <input type="checkbox" name="checkbox" class="input-checkbox" required>Términos y condiciones
+                  </div> 
+                  <div class="contenedor-botonCrear">        
+                    <button type="submit" name="crearCuenta" class="button-crearCuenta">CREAR CUENTA</button>
+                </div>
+            <div class="contenedor-iniciarSesion">         
+                    <label class="tenesCuenta-registro">¿Tenés una cuenta?</label>
+                    <button type="button" name="iniciarSesion" class="button-iniciarSesion">INICIAR SESION</button>
+            </div>      
+                </form>
+            </div>
+         </section>
+       </main>
+    </div>
+</body>
+</html>
