@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.body-registro{
+    background-color: #476072;
+    width: 100%;
+    height: 100vh;
+}
+.header-registro{
+    background-color: #334257;
+}
+.section-registro{
+    background-color: #548ca8;
+}
+
+.logo-img{
+    width: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.logo{
+    text-align: center;
+}
+.titulo-registro{
+    font-size: 15px;
+    text-align: center;
+    color: #EEEEEE;
+    padding: 15px;
+}
+.lista-iconos-registro{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5px 0;
+}
+.lista-iconos-registro li a{
+    color: inherit;
+}
+.iconos-facebook, .iconos-twitter, .iconos-instagram{
+    font-size: 20px;
+    margin: 0px 20px;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 7px 9px;
+    background-color: #c08181;
+}
+.form-registro{
+    font-size: 12px;
+    color:#EEEEEE;
+    padding: 0 10% 0 10%;
+    text-align: left;
+}
+.nombre-registro, .email-registro, .contraseña-registro{
+    padding-right: 9%;
+   
+}
+.input-nombre, .input-email, .input-contraseña{
+    width: 56%;
+    height: 15px; 
+    border-radius: 10px;
+    border: #646161 1px solid;
+    padding: 10px 0 0 0;
+}
+.fechaDeNacimiento-registro{
+    padding-right: 19px;
+}
+.input-fechaNacimiento{
+    width: 46%;
+    height: 16px;
+    border-radius: 10px;
+    border: #646161 1px solid;
+    color: #646161;
+    text-align: center;
+}
+.contenedor-tyc{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.input-checkbox{
+    margin: 10px;
+    margin-bottom: 5px;
+}
+.contenedor-botonCrear{
+    text-align: center;
+    margin: 15px;
+}
+.button-crearCuenta, .button-iniciarSesion{
+    color: #646161;
+    padding: 2px;
+    border-radius: 20%;
+    border: solid 1px #646161;
+}
+.contenedor-iniciarSesion{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.tenesCuenta-registro{
+    margin-right: 9%;
+    font-size: 15px;
+}
+.contenedor-nombreRegistro, .contenedor-emailRegistro, .contenedor-contraseña{
+    margin-bottom: 15px;
+}
+.contenedor-fechaDeNacimiento{
+    margin-bottom: 10px;
+}
+@media (min-width: 481px){
+    .logo-img{
+        width: 25%;
+    }
+    .iconos-facebook, .iconos-twitter, .iconos-instagram{
+        font-size: 25px;
+        padding: 7px 10px;
+    }
+    .titulo-registro{
+        font-size: 20px;
+    }
+    .form-registro{
+        font-size: 15px;
+    }
+    .contenedor-tyc{
+        font-size: 20px;
+    }
+    .button-crearCuenta, .button-iniciarSesion{
+        padding: 5px;
+    }
+    .tenesCuenta-registro{
+        font-size: 20px;
+    }
+    .input-nombre, .input-email, .input-contraseña{
+        height: 22px;
+    }
+    .input-fechaNacimiento{
+        height: 25px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .input-checkbox{
+        transform: scale(2);
+        margin: 0 20px;
+    }
+    .contenedor-fechaDeNacimiento{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 769px){
+    .logo-img{
+        width: 30%;
+    }
+    .iconos-facebook, .iconos-twitter, .iconos-instagram{
+        font-size: 50px;
+        margin: 0 50px;
+        padding: 7px 15px;
+    }
+    .lista-iconos-registro{
+        margin: 10px 0 25px 0;
+    }
+    .titulo-registro{
+        font-size: 35px;
+    }
+    .form-registro{
+        font-size: 30px;
+    }
+    .contenedor-tyc{
+        font-size: 35px;
+        margin-bottom: 25px;
+    }
+    .button-crearCuenta, .button-iniciarSesion{
+        padding: 20px;
+        font-size: 22px;
+    }
+    .tenesCuenta-registro{
+        font-size: 35px;
+    }
+    .input-nombre, .input-email, .input-contraseña{
+        height: 35px;
+    }
+    .input-fechaNacimiento{
+        height: 40px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .contenedor-nombreRegistro, .contenedor-emailRegistro, .contenedor-contraseña{
+        margin-bottom: 25px;
+    }
+    .contenedor-fechaDeNacimiento{
+        margin-bottom: 30px;
+    }
+    .contenedor-iniciarSesion{
+        padding-bottom: 25px;
+    }
+    .contenedor-botonCrear{
+        margin: 25px;
+    }
+    .input-checkbox{
+        transform: scale(3);
+        margin: 0 35px;
+    }
+}

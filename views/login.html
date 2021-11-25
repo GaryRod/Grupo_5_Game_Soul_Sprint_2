@@ -6,47 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="../public/css/normalize.css">
-    <link rel="stylesheet" href="../public/css/loginStyles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/loginStyles.css">
     <title>Login</title>
 </head>
 <body>
-    <!-- eliminar estos espacios que no son separaciones -->
-    <!-- agregar etiqueta main -->
-
-    <form action="" method="post" class="form">
-
-        <div class="form__logo">
-            <img src="../public/images/Game-Soul.png" class="form__img">
-        </div>
-
-        <div class="form__segunda-seccion">
-            <div class="form__contenedor-subtitulos">
-                <!-- cambiar los h3 a etiqueta span -->
-                <h3 class="form__subtitulo-login">Login</h3>
-                <h3><a href="#" class="form__subtitulo-a">Crear cuenta</a></h3>
+    <main>
+        <form action="/login" method="post" class="form">
+            <div class="form__logo">
+                <img src="../images/Game-Soul.png" class="form__img">
             </div>
-            <div class="form__contenedor-inputs">
-                <input type="text" class="form__input" placeholder="E-mail">
-                <input type="password" class="form__input" placeholder="Contraseña">
-            </div>
-        </div>
 
-        <div class="form__tercera-seccion">
-            <div class="form__contenedor-checkbox">
-                <input type="checkbox" class="form__boton-checkbox"><span class="form__span">Recuérdame</span>
+            <div class="form__segunda-seccion">
+                <div class="form__contenedor-subtitulos">
+                    <span class="form__subtitulo-login">Login</span>
+                    <span><a href="#" class="form__subtitulo-a">Crear cuenta</a></span>
+                </div>
+                <div class="form__contenedor-inputs">
+                    <input type="text" class="form__input" placeholder="E-mail" name="email-login">
+                    <input type="password" class="form__input" placeholder="Contraseña" name="contrasenia-login">
+                </div>
             </div>
-            <div class="form__contenedor-a">
-                <a href="#" class="form__a">¿Olvidaste tu Contraseña?</a>
-            </div>
-        </div>
 
-        <div class="form__cuarta-seccion">
-            <input type="submit" value="Iniciar Sesión" class="form__boton-enviar">
-        </div>
-    </form>
-<!-- cambiar el footer -->
-    <!-- <footer class="footer">
+            <div class="form__tercera-seccion">
+                <div class="form__contenedor-checkbox">
+                    <input type="checkbox" class="form__boton-checkbox"><span class="form__span">Recuérdame</span>
+                </div>
+                <div class="form__contenedor-a">
+                    <a href="#" class="form__a">¿Olvidaste tu Contraseña?</a>
+                </div>
+            </div>
+
+            <div class="form__cuarta-seccion">
+                <input type="submit" value="Iniciar Sesión" class="form__boton-enviar">
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
         <nav class="footer__nav">
             <ul class="footer__ul">
                 <li class="footer__li"><a href="#">Legal</a></li>
@@ -61,15 +58,12 @@
                     <li class="footer__li-img"><i class="fas fa-credit-card fa-2x"></i></li>
                     <li class="footer__li-img"><i class="fab fa-google-play fa-2x"></i></li>
                     <div class="footer__li-img-mercadopago">
-                        <li class="footer__li-img"><i><img src="../public/images/mercado-pago.svg"></i></li>
+                        <li class="footer__li-img"><i><img src="../images/mercado-pago.svg"></i></li>
                     </div>
                     <li class="footer__li-img"><i class="fab fa-cc-paypal fa-2x"></i></li>
                 </ul>
             </div>
-            
         </nav>
-
-        
 
         <div class="footer__nav-bottom">
             <ul class="footer__ul-bottom">
@@ -80,7 +74,6 @@
                 <li class="footer__li-img"><a href="#"><button class="footer__li-button"><i class="fab fa-pinterest icono"></i></button></a></li>
             </ul>
         </div>
-    </footer> -->
-
+    </footer>
 </body>
 </html>
