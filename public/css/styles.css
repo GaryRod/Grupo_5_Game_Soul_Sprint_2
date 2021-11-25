@@ -23,6 +23,7 @@
     margin-bottom: 10px;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 /* Header primer fila */
@@ -70,6 +71,10 @@
     width: 40px;
 }
 
+.cont-i__iconos--user{
+    position: relative;
+}
+
 .cont-i__iconos--burger-menu{
     width: 35px;
 }
@@ -114,6 +119,174 @@
     margin-top: 70px
 }
 
+/* Index */
+.main--index{
+    padding: 5px
+}
+
+.button-carrito{
+    background-color: #4c854c;
+    border: solid 1px #417541;
+    width: 150px;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #003;
+    transition: color .3s, background-color .5s;
+}
+
+.button-carrito--ppal{
+    width: 100%;
+}
+
+.button-carrito:hover{
+    background-color: #074e07;
+}
+
+.button-carrito:active{
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px;
+}
+
+.section-ppal__art{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px
+}
+
+.section-ppal__picture{
+    min-width: 270px;
+    width: 100%;
+}
+
+.section-ppal__img{
+    width: 100%;
+    height: 100%;
+}
+
+.section-ppal__datos-imgs-button{
+    display: flex;
+    flex-direction: column;
+    background-color: #548ca8;
+}
+
+.section-ppal__datos{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+}
+
+.section-ppal__spans{
+    width: 100%;
+    text-align: center;
+}
+
+.section-ppal__spans--precio{
+    border-left: solid 1px #476072;
+    border-right: solid 1px #476072;
+}
+
+.section-ppal__cont-div-imgs, .section-ppal__cont-imgs{
+    display: flex;
+    width: 100%;
+}
+
+.section-ppal__div-imgs, .section-ppal__imgs{
+    width: 100%;
+}
+
+.section-ppal__div-imgs{
+    cursor: pointer;
+}
+
+.section-sec__titulo{
+    margin: 10px 0;
+}
+
+.section-sec__cont-arts{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.section-sec__arts{
+    background-color: #548ca8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+    transition: all .2s;
+}
+
+.section-sec__arts:hover{
+    box-shadow: 2px 2px 2px #000;
+}
+
+.section-sec__cont-picture-star{
+    position: relative;
+    width: 100px;
+    height: 100px
+}
+
+.section-sec__cont-star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(73, 177, 218, 0.562);
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    color: yellow;
+}
+
+.section-sec__cont-star:hover{
+    opacity: 1;
+}
+
+.section-sec__star{
+    cursor: pointer;
+}
+
+.section-sec__picture{
+    text-align: center;
+    width: 100%;
+    height: 100%
+}
+
+.section-sec__imgs{
+    width: 100%;
+    height: 100%
+}
+
+.section-sec__cont-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px
+}
+
+.section-sec__spans{
+    display: block;
+    text-align: center;
+}
+
+.section-sec__titulo-enlace{
+    color: #eee;
+    text-decoration: none;
+}
+
+.section-sec__titulo-enlace:hover{
+    text-shadow: -2px -1px 15px #eee;
+}
+
 /* Carrito */
 .carrito{
     display: flex;
@@ -123,7 +296,7 @@
     margin-bottom: 15px;
 }
 
-.carrito__juegos, .rito__cod-total{
+.carrito__juegos, .carrito__cod-total{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -216,18 +389,18 @@
     padding: 10px 15px;
     border-radius: 10px;
     font-size: 20px;
-    background-color: #eee;
-    color: #334257;
-    border: solid 1px #eee;
-    cursor: pointer;
     margin-bottom: 10px;
-    box-shadow: 2px 2px #000;
-    transition: color .3s, background-color .5s
+    background-color: #4c854c;
+    border: solid 1px #417541;
+    color: #eee;
+    text-align: center;
+    box-shadow: 2px 2px 2px #003;
+    cursor: pointer;
+    transition: color .3s, background-color .5s;
 }
 
 .metodo-pago__boton:hover{
-    background-color: #476072;
-    color: #eee
+    background-color: #074e07;
 }
 
 .metodo-pago__boton:active{
@@ -286,7 +459,7 @@
 }
 
 /* Media queries */
-@media (min-width: 481px ) {
+@media (min-width: 480px ) {
     .cont-i__iconos--burger-menu{
         display: none;
     }
@@ -299,16 +472,71 @@
         position: static;
     }
 
+    .main{
+        margin-top: 120px;
+    }
+
+    /* Index */
+
+    .main--index{
+        padding: 0 3%
+    }
+    
+    .section-ppal__art{
+        flex-direction: row;
+        margin: 0 auto
+    }
+
+    .section-ppal__datos-imgs-button{
+        flex-direction: column;
+        padding:8px
+    }
+
+    .section-ppal__datos{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+    }
+
+    .section-ppal__spans{
+        text-align: left;
+    }
+
+    .section-ppal__spans--titulo{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .section-ppal__spans--precio{
+        border-left: none;
+        border-right: none;
+    }
+
+    .section-ppal__cont-div-imgs{
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .section-ppal__cont-imgs{
+        gap: 6px;
+    }
+
+    .section-ppal__datos-imgs-button{
+        max-width: 300px;
+    }
+
+    .section-sec__cont-picture-star{
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Carrito */
     .carrito__juegos{
         padding: 20px;
     }
 
     .cont-search{
         width: 50%;
-    }
-
-    .main{
-        margin-top: 120px;
     }
 
     .pagar-metodos__titulo{
@@ -321,10 +549,18 @@
 }
 
 @media (min-width: 769px) {
+    .body{
+        overflow-x: hidden;
+    }
+
     .header__primer-fila{
         padding: 5px 10px;
     }
 
+    /* Index */
+    .section-sec__cont-arts{
+        overflow-x: visible;
+    }
 
     /* Carrito */
     .carrito{
@@ -351,4 +587,3 @@
         justify-content: space-between;
     }
 }
-
