@@ -14,6 +14,19 @@
     color: #eee;
 }
 
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
+}
+
 /* Header */
 .header{
     width: 100%;
@@ -199,9 +212,15 @@
     gap: 10px;
 }
 
-.carrito__i{
+.carrito__i-trash{
     color: #eee;
     width: 20px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.carrito__i-trash:active{
+    transform: scale(0, 0);
 }
 
 .carrito__cod{
@@ -279,16 +298,21 @@
 
 /* Footer */
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #334257;
 }
 
 .footer__primer-fila{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
 }
 
 .footer__ul{
@@ -306,6 +330,12 @@
 .footer__li-enlaces-generales{
     text-decoration: none;
     color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .footer__li-met-pago{

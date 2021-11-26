@@ -1,17 +1,32 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0
 }
 
 /* Teléfonos chicos, 361px */
 
-body {
+.body {
     font-family: 'Roboto', sans-serif;
     background-color: #476072;
     width: 100%;
     height: 100vh;
 }
 
-main{
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
+}
+
+.main--login{
     background-color: #548ca8;
     padding: 10px
 }
@@ -37,7 +52,6 @@ main{
 
 .form__logo {
     text-align: center;
-    padding: 2% 0 0 0;
 }
 
 .form__img {
@@ -109,14 +123,14 @@ cursor: pointer
 }
 
 .form__boton-enviar {
-    color: #000000;
+    color: #000;
     margin: auto;
     padding: 10px;
     width: 60%;
     border-radius: 10px;
     border: solid 1px #000;
     background-color: #eee;
-    transition: all 1s;
+    transition: all .5s;
     cursor: pointer
 }
 
@@ -124,18 +138,24 @@ cursor: pointer
     background-color: #476072;
     color: white;
 }
+
 /* Footer */
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #334257;
 }
 
 .footer__primer-fila{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
 }
 
 .footer__ul{
@@ -153,6 +173,12 @@ cursor: pointer
 .footer__li-enlaces-generales{
     text-decoration: none;
     color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .footer__li-met-pago{
@@ -191,9 +217,7 @@ cursor: pointer
         width: 40%;
     }
 
-
     .form__tercera-seccion {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -207,15 +231,13 @@ cursor: pointer
 /* PCs chicas en adelante*/
 
 @media (min-width: 769px) {
-    
+
     .logo-img{
         width: 150px;
     }
 
     .form {
-        max-width: 65%;
         margin: 2% 0 0 20%;
-        border-radius: 50px;
     }
 
     .form__input {
@@ -224,11 +246,6 @@ cursor: pointer
 
     .form__boton-enviar {
         width: 200px;
-    }
-    .form__tercera-seccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     /* Footer */
@@ -245,7 +262,6 @@ cursor: pointer
         max-width: 50%;
         margin: 1% 0 0 25%;
         padding-bottom: 1%;
-        border-radius: 50px;
     }
 
     .form__input {
@@ -254,12 +270,6 @@ cursor: pointer
 
     .form__contenedor-subtitulos {
         justify-content: space-evenly;
-    }
-
-    .form__tercera-seccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
     }
 
     .form__boton-enviar {
