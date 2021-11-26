@@ -234,10 +234,6 @@ cursor: pointer
         border-radius: 50px;
     }
 
-    .form__boton-enviar {
-        width: 40%;
-    }
-
     .form__tercera-seccion {
         flex-direction: row;
         gap: 50px;
@@ -303,7 +299,7 @@ cursor: pointer
     }
 
     .form__boton-enviar {
-        width: 25%;
+        width: 100%;
     }
 
     .form__tercera-seccion {
