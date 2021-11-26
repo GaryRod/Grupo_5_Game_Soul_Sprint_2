@@ -11,17 +11,22 @@ body {
     height: 100vh;
 }
 
-main{
-    background-color: #548ca8;
-    padding: 10px
+/* Inicio del Login */
+
+/* Contenedor principal */
+
+.main--login {
+    background-color: #eee;
+    padding: 10px;
+    max-width: 450px;
+    margin: 2% auto;
+    border-radius: 25px;
 }
 
-.header-registro{
-    background-color: #334257;
-}
+/* Logo */
 
 .logo-img{
-    width: 70px;
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -29,6 +34,8 @@ main{
 .logo{
     text-align: center;
 }
+
+/* Formulario */
 
 .form {
     max-width: 90%;
@@ -45,7 +52,8 @@ main{
 }
 
 .form__subtitulo-login, .form__subtitulo-a, .form__span, .form__a {
-    color: #eee;
+    color: #333;
+
 }
 
 .form__segunda-seccion {
@@ -73,18 +81,27 @@ main{
 
 .form__input {
     padding: 5px;
-    width: 90%;
     margin: 5px;
     border-radius: 10px;
     border: 1px solid black;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 4, 55, 0.8);
 }
+
+input::placeholder {
+    color: #476072;
+}
+
 
 .form__tercera-seccion {
     display: flex;
     flex-direction: column;
     margin: 10px;
     align-items: center;
+    gap: 4%;
+}
+
+.form__contenedor-checkbox {
+    text-align: center;
 }
 
 .form__subtitulo-a, .form__a {
@@ -109,21 +126,22 @@ cursor: pointer
 }
 
 .form__boton-enviar {
-    color: #000000;
+    color: #000;
     margin: auto;
     padding: 10px;
     width: 60%;
     border-radius: 10px;
     border: solid 1px #000;
     background-color: #eee;
-    transition: all 1s;
-    cursor: pointer
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
 .form__boton-enviar:hover {
     background-color: #476072;
     color: white;
 }
+
 /* Footer */
 .footer{
     width: 100%;
@@ -182,20 +200,24 @@ cursor: pointer
 
 @media (min-width: 481px) {
 
+    .logo-img {
+        width: 60%;
+    }
+
     .form {
         max-width: 65%;
         border-radius: 50px;
     }
 
-    .form__boton-enviar {
-        width: 40%;
-    }
-
-
     .form__tercera-seccion {
         display: flex;
         flex-direction: row;
+        gap: 50px;
         justify-content: space-between;
+    }
+
+    .form__input {
+        width: 50%;
     }
 
     /* Footer */
@@ -213,22 +235,18 @@ cursor: pointer
     }
 
     .form {
-        max-width: 65%;
         margin: 2% 0 0 20%;
-        border-radius: 50px;
     }
 
     .form__input {
-        width: 30%;
+        width: 50%;
     }
 
     .form__boton-enviar {
         width: 200px;
     }
     .form__tercera-seccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 50px;
     }
 
     /* Footer */
@@ -245,24 +263,19 @@ cursor: pointer
         max-width: 50%;
         margin: 1% 0 0 25%;
         padding-bottom: 1%;
-        border-radius: 50px;
     }
 
     .form__input {
-        width: 30%;
+        width: 65%;
     }
 
     .form__contenedor-subtitulos {
         justify-content: space-evenly;
+        gap: 10%;
     }
 
     .form__tercera-seccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 7%;
     }
 
-    .form__boton-enviar {
-        width: 25%;
-    }
 }
