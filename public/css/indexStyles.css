@@ -290,30 +290,17 @@
 .section-sec__cont-picture-star{
     position: relative;
     width: 100px;
-    height: 100px
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
 
 .section-sec__cont-star{
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(73, 177, 218, 0.562);
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
+    top: 100%;
+    left: -27px;
     color: yellow;
-}
-
-.section-sec__cont-star:hover{
-    opacity: 1;
-}
-
-.section-sec__star{
-    cursor: pointer;
 }
 
 .section-sec__picture{
@@ -484,6 +471,10 @@
         height: 150px;
     }
 
+    .section-sec__cont-star{
+        left: -7px;
+    }
+
     /* Footer */
     .footer__met-pago{
         width: 50px;
@@ -502,6 +493,32 @@
     /* Index */
     .section-sec__cont-arts{
         overflow-x: visible;
+    }
+
+    .section-sec__cont-star{
+        top: 0;
+        left: 0;
+        background-color: rgba(73, 177, 218, 0.562);
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+    }
+    
+    .section-sec__cont-star:hover{
+        opacity: 1;
+    }
+    
+    .section-sec__star{
+        cursor: pointer;
+    }
+    
+    .section-sec__star:hover::after{
+        content: "Añadir a favoritos";
+        color: #eee;
     }
 
     /* Footer */
