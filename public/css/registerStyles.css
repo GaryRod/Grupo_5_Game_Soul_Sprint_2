@@ -161,16 +161,21 @@
 
 /* Footer */
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #334257;
 }
 
 .footer__primer-fila{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
 }
 
 .footer__ul{
@@ -188,6 +193,12 @@
 .footer__li-enlaces-generales{
     text-decoration: none;
     color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .footer__li-met-pago{
