@@ -24,17 +24,31 @@
 .body::-webkit-scrollbar-track{
     background: #548ca8;
 }
-
+.contenedor-todoElRegistro{
+    background-color: #548ca8;
+    
+}
+.body-registro{
+    background-color: #548ca8;
+}
 .header-registro{
     background-color: #334257;
 }
+.main-registro{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    ;
+}
 
 .section-registro{
-    background-color: #548ca8;
+    background-color: #eee;
+    margin: 5%;
+    border-radius: 25px;
 }
 
 .logo-img{
-    width: 70px;
+    width: 30%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -46,7 +60,7 @@
 .titulo-registro{
     font-size: 15px;
     text-align: center;
-    color: #EEEEEE;
+    color:#000;
     padding: 15px;
 }
 
@@ -72,8 +86,8 @@
 }
 
 .form-registro{
+    color:#000;
     font-size: 12px;
-    color:#EEEEEE;
     padding: 0 10% 0 10%;
     text-align: left;
 }
@@ -124,7 +138,7 @@
     margin: 15px;
 }
 
-.button-crearCuenta, .button-iniciarSesion{
+.button-crearCuenta{
     color: #000000;
     margin: auto;
     padding: 10px;
@@ -136,14 +150,22 @@
     cursor: pointer
 }
 
-.button-crearCuenta:hover, .button-iniciarSesion:hover{
+.button-crearCuenta:hover{
     background-color: #476072;
     color: white;
 }
 
 .contenedor-iniciarSesion{
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
     padding-bottom: 15px;
+    font-size: 15px;
+    align-items: center;
+}
+.button-iniciarSesion{
+    color: #000;
+    text-decoration: inherit;
+
 }
 
 .tenesCuenta-registro{
@@ -289,7 +311,7 @@
         margin: 10px 0 25px 0;
     }
 
-    .button-crearCuenta, .button-iniciarSesion {
+    .button-crearCuenta{
         width: 25%;
     }
 
