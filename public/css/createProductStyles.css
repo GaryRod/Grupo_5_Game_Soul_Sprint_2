@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    width: 100%;
+    height: 100vh;
+    background-color: #476072;
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+}
+
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
+}
+
+/* Header */
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #334257;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Header primer fila */
+.header__primer-fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+}
+
+.header__logo{
+    width: 60px;
+}
+
+.cont-search{
+    background-color: #548ca8;
+    padding: 3px;
+    border-radius: 10px;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-search__input{
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px #548ca8;
+}
+
+.cont-search__i{
+    width: 15px;
+    cursor: pointer;
+    margin-top: 4px;
+}
+
+.cont-i{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cont-i__cont-lista-icono{
+    position: relative;
+}
+
+.cont-i__lista{
+    position: absolute;
+    list-style: none;
+    border: solid 1px #334257;
+    display: none;
+    border-radius: 5px;
+    background-color: #eee;
+    transform: translateX(-15px);
+}
+
+.cont-i__cont-lista-icono:hover .cont-i__lista{
+    display: block;
+}
+
+.cont-i__enlaces{
+    color: #334257;
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    transition: all .2s;
+}
+
+.cont-i__enlaces:hover{
+    background-color: #548ca8;
+    color: #eee;
+}
+
+.cont-i__items-log{
+    border-bottom: solid 1px #334257;
+}
+
+.cont-i__iconos{
+    cursor: pointer;
+    width: 40px;
+}
+
+.cont-i__iconos--user{
+    position: relative;
+}
+
+.cont-i__iconos--burger-menu{
+    width: 35px;
+}
+
+/* Header navegador */
+.header__nav{
+    position: fixed;
+    top: 60px;
+    left: 100%;
+    transition: all .5s;
+}
+
+.header__lista{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    background-color: #548ca8;
+    border-bottom: solid 1px #334257;
+}
+
+.header__items{
+    width: 100%;
+}
+
+.header__enlaces{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #eee;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+.header__enlaces:hover{
+    background-color: #eee;
+    color: #548ca8;
+}
+
+/* Formulario de Crear Producto */
+
+
+/* Footer */
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #334257;
+}
+
+.footer__primer-fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
+}
+
+.footer__ul{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__li-enlaces-generales{
+    text-decoration: none;
+    color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.footer__li-met-pago{
+    width: 40px;
+}
+
+.footer__li-enlaces-generales,.footer__li-met-pago{
+    margin-left: 5px;
+}
+
+.footer__li-redes{
+    color: #000;
+    background-color: #eee;
+    border-top: solid 2px #eee;
+    border-left: solid 2px #eee;
+    border-bottom: solid 2px #808080;
+    border-right: solid 2px #808080;
+    border-radius: 45%;
+    padding: 10px;
+}
+
+@media (min-width: 480px ) {
+    .cont-i__iconos--burger-menu{
+        display: none;
+    }
+
+    .header__lista{
+        flex-direction: row;
+    }
+    
+    .header__nav{
+        position: static;
+    }
+
+    .main{
+        margin-top: 120px;
+    }
+
+    .cont-search{
+        width: 50%;
+    }
+
+}
+

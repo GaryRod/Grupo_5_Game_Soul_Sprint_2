@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/createProductStyles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Game Soul</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header__primer-fila">
+            <div>
+                <a href="index.html"><img src="../images/Game-Soul.png" alt="logo" class="header__logo"></a>
+            </div>
+
+            <form class="cont-search">
+                <input type="search" placeholder="Dime que juego buscas" class="cont-search__input" id="search">
+                <label for="search"><img src="../images/search.svg" class="cont-search__i"></label> 
+            </form>
+
+            <div class="cont-i">
+                <div class="cont-i__cont-lista-icono">
+                    <img src="../images/user.svg" class="cont-i__iconos con-i__iconos--user">
+                    <ul class="cont-i__lista">
+                        <li class="cont-i__items cont-i__items-log"><a href="/login" class="cont-i__enlaces">Login</a></li>
+                        <li class="cont-i__items"><a href="/register" class="cont-i__enlaces">Register</a></li>
+                    </ul>
+                </div>
+                <a href="productCart.html"><img src="../images/shop.svg" class="cont-i__iconos"></a>
+                <img src="../images/burger-menu.svg" class="cont-i__iconos cont-i__iconos--burger-menu">
+            </div>
+        </div>
+
+        <nav class="header__nav">
+            <ul class="header__lista">
+                <li class="header__items"><a href="" class="header__enlaces">Favoritos</a></li>
+                <li class="header__items"><a href="" class="header__enlaces">Ofertas</a></li>
+                <li class="header__items"><a href="" class="header__enlaces">Consolas</a></li>
+                <li class="header__items"><a href="" class="header__enlaces">Categorias</a></li>
+                <li class="header__items"><a href="" class="header__enlaces">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="" method="post" class="formCreateProduct">
+        <div class="form__seccion-nombre">
+            <span>Nombre del producto:</span>
+            <input type="text" name="nombreDelProductoCreado" placeholder="Nombre del producto..." required>
+        </div>
+
+        <div class="form__seccion-descripcion">
+            <span>Descripción del producto:</span>
+            <input type="textarea" name="descripcionDelProductoCreado" placeholder="Descripción del producto..." required>
+        </div>
+
+        <div class="form__seccion-img">
+            <span>Inserta una imagen:</span>
+            <input type="file" accept=".png, .jpg" multiple name="imagenDelProductoCreado" required>
+        </div>
+
+        <div class="form__seccion-categoria">
+            <span>Selecciona un género:</span>
+            <select name="generoDelProductoCreado" required>
+                <option value="accion">Acción</option>
+                <option value="aventura">Aventura</option>
+                <option value="fps">FPS</option>
+                <option value="estrategia">Estrategia</option>
+                <option value="deportes">Deportes</option>
+            </select>
+        </div>
+
+        <div class="form__seccion-edicion">
+            <span>Selecciona una edición:</span>
+            <select name="edicionDelProductoCreado" required>
+                <option value="estandar">Estándar</option>
+                <option value="coleccionista">Coleccionista</option>
+            </select>
+        </div>
+
+        <div class="form__seccion-precio">
+            <span>Escribe un precio:</span>
+            <input type="text" name="precioDelProductoCreado" required>
+        </div>
+
+        <div class="form__seccion-inputCrear">
+            <input type="submit" value="Crear Producto">
+        </div>
+    </form>
+
+
+
+    <footer class="footer">
+        <div class="footer__primer-fila">
+            <ul class="footer__ul">
+                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Legal</a></li>
+                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Política</a></li>
+                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Cookies</a></li>
+                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Ayuda</a></li>
+                <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Nosotros</a></li>
+            </ul>
+
+            <ul class="footer__ul footer__ul--met-pago">
+                <li class="footer__li"><img src="../images/mastercard.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/visa.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/mercado-pago.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/paypal.svg" class="footer__li-met-pago"></li>
+                <li class="footer__li"><img src="../images/google-pay.svg" class="footer__li-met-pago"></li>
+            </ul>
+        </div>
+
+        <ul class="footer__ul">
+            <li class="footer__li"><a href="#"><i class="fab fa-facebook footer__li-redes"></i></a></li>
+            <li class="footer__li"><a href="#"><i class="fab fa-twitter footer__li-redes"></i></a></li>
+            <li class="footer__li"><a href="#"><i class="fab fa-instagram footer__li-redes"></i></a></li>
+            <li class="footer__li"><a href="#"><i class="fab fa-linkedin footer__li-redes"></i></a></li>
+            <li class="footer__li"><a href="#"><i class="fab fa-pinterest footer__li-redes"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
