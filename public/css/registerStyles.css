@@ -23,11 +23,8 @@
 
 .body::-webkit-scrollbar-track{
     background: #548ca8;
-}
-.contenedor-todoElRegistro{
-    background-color: #548ca8;
-    
-}
+}   
+
 .body-registro{
     background-color: #548ca8;
 }
