@@ -6,20 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/normalize.css">
     <link href="/css/registerStyles.css" rel="stylesheet">
     <title>Registro</title>
 </head>
 
 <body class="body-registro">
-    <div class="contenedor-todoElRegistro">
-        <header class="header-registro">
-            <div class="logo">
-                <a href="index.html"><img src="/images/Game-Soul.png" class="logo-img"></a>
-            </div>
-        </header>
-
-        <main>
+        <main class="main-registro">
             <section class="section-registro">
+                
+                <div class="logo">
+                    <a href="index.html"><img src="/images/Game-Soul.png" class="logo-img"></a>
+                </div>
                 <div>
                     <p class="titulo-registro">CREA TU CUENTA  O REGISTRATE CON TUS REDES SOCIALES</p>
                 </div>
@@ -64,13 +62,13 @@
 
                 <div class="contenedor-iniciarSesion">         
                         <label class="tenesCuenta-registro">¿Tenés una cuenta?</label>
-                        <a href="/login"><button type="button" name="iniciarSesion" class="button-iniciarSesion">INICIAR SESION</button></a>
+                       <div><a href="/login" class="button-iniciarSesion">INICIAR SESION</a></div>
                 </div>      
                     </form>
                 </div>
             </section>
         </main>
-    </div>
+    
 
     <footer class="footer">
         <div class="footer__primer-fila">
@@ -82,7 +80,7 @@
                 <li class="footer__li"><a href="#" class="footer__li-enlaces-generales">Nosotros</a></li>
             </ul>
 
-            <ul class="footer__ul">
+            <ul class="footer__ul footer__ul--met-pago">
                 <li class="footer__li"><img src="../images/mastercard.svg" class="footer__li-met-pago"></li>
                 <li class="footer__li"><img src="../images/visa.svg" class="footer__li-met-pago"></li>
                 <li class="footer__li"><img src="../images/mercado-pago.svg" class="footer__li-met-pago"></li>

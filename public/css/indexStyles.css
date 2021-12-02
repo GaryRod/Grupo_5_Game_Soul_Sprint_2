@@ -14,6 +14,19 @@
     color: #eee;
 }
 
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
+}
+
 /* Header */
 .header{
     width: 100%;
@@ -243,6 +256,11 @@
     cursor: pointer;
 }
 
+/* Section Sec */
+.section__sec{
+    margin-bottom: 10px
+}
+
 .section-sec__titulo{
     margin: 10px 0;
 }
@@ -260,8 +278,9 @@
     flex-direction: column;
     align-items: center;
     padding: 8px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     transition: all .2s;
+    gap: 5px
 }
 
 .section-sec__arts:hover{
@@ -271,30 +290,17 @@
 .section-sec__cont-picture-star{
     position: relative;
     width: 100px;
-    height: 100px
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
 }
 
 .section-sec__cont-star{
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(73, 177, 218, 0.562);
-    opacity: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
+    top: 100%;
+    left: -27px;
     color: yellow;
-}
-
-.section-sec__cont-star:hover{
-    opacity: 1;
-}
-
-.section-sec__star{
-    cursor: pointer;
 }
 
 .section-sec__picture{
@@ -331,16 +337,21 @@
 
 /* Footer */
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #334257;
 }
 
 .footer__primer-fila{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
 }
 
 .footer__ul{
@@ -358,6 +369,12 @@
 .footer__li-enlaces-generales{
     text-decoration: none;
     color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .footer__li-met-pago{
@@ -454,6 +471,10 @@
         height: 150px;
     }
 
+    .section-sec__cont-star{
+        left: -7px;
+    }
+
     /* Footer */
     .footer__met-pago{
         width: 50px;
@@ -474,9 +495,360 @@
         overflow-x: visible;
     }
 
+    .section-sec__cont-star{
+        top: 0;
+        left: 0;
+        background-color: rgba(73, 177, 218, 0.562);
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .5s;
+    }
+    
+    .section-sec__cont-star:hover{
+        opacity: 1;
+    }
+    
+    .section-sec__star{
+        cursor: pointer;
+    }
+    
+    .section-sec__star:hover::after{
+        content: "Añadir a favoritos";
+        color: #eee;
+    }
+
     /* Footer */
     .footer__primer-fila{
         flex-direction: row;
         justify-content: space-between;
     }
 }
+
+
+/*Comienza Registro*/
+
+
+.body{
+    background-color: #476072;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #eee
+}
+
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
+}
+
+.body-registro{
+    background-color: #548ca8;
+}
+.header-registro{
+    background-color: #334257;
+}
+.main-registro{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    ;
+}
+
+.section-registro{
+    background-color: #eee;
+    margin: 5%;
+    border-radius: 25px;
+}
+
+.logo-img{
+    width: 30%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.titulo-registro{
+    font-size: 15px;
+    text-align: center;
+    color:#000;
+    padding: 15px;
+}
+
+.lista-iconos-registro{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5px 0;
+}
+
+.lista-iconos-registro li a{
+    color: inherit;
+}
+
+.iconos-facebook, .iconos-twitter, .iconos-instagram{
+    font-size: 20px;
+    margin: 0px 20px;
+    margin-bottom: 10px;
+    border: solid 1px #808080;
+    border-radius: 50%;
+    padding: 7px 9px;
+    background-color: #eee;
+}
+
+.form-registro{
+    color:#000;
+    font-size: 12px;
+    padding: 0 10% 0 10%;
+    text-align: left;
+}
+.nombre-registro{
+    padding-right: 9%;
+}
+.email-registro{
+    padding-right:11.5%;
+}
+
+.contraseña-registro{
+    padding-right: 2%;
+}
+
+.input-nombre, .input-email, .input-contraseña{
+    width: 56%;
+    height: 15px; 
+    border-radius: 10px;
+    border: #646161 1px solid;
+    padding: 10px 0 0 0;
+}
+
+.fechaDeNacimiento-registro{
+    padding-right: 19px;
+}
+
+.input-fechaNacimiento{
+    width: 46%;
+    height: 16px;
+    border-radius: 10px;
+    border: #646161 1px solid;
+    color: #646161;
+    text-align: center;
+}
+
+.contenedor-tyc{
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.input-checkbox{
+    margin: 10px;
+    margin-bottom: 5px;
+}
+
+.contenedor-botonCrear{
+    text-align: center;
+    margin: 15px;
+}
+
+.button-crearCuenta{
+    color: #000000;
+    margin: auto;
+    padding: 10px;
+    width: 60%;
+    border-radius: 10px;
+    border: solid 1px #000;
+    background-color: #eee;
+    transition: all 1s;
+    cursor: pointer
+}
+
+.button-crearCuenta:hover{
+    background-color: #476072;
+    color: white;
+}
+
+.contenedor-iniciarSesion{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    font-size: 15px;
+    align-items: center;
+}
+.button-iniciarSesion{
+    color: #000;
+    text-decoration: inherit;
+
+}
+
+.tenesCuenta-registro{
+    margin-right: 9%;
+    font-size: 15px;
+}
+
+.contenedor-nombreRegistro, .contenedor-emailRegistro, .contenedor-contraseña{
+    margin-bottom: 15px;
+}
+
+.contenedor-fechaDeNacimiento{
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #334257;
+}
+
+.footer__primer-fila{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
+}
+
+.footer__ul{
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer__li{
+    list-style: none;
+}
+
+.footer__li-enlaces-generales{
+    text-decoration: none;
+    color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.footer__li-met-pago{
+    width: 40px;
+}
+
+.footer__li-enlaces-generales,.footer__li-met-pago{
+    margin-left: 5px;
+}
+
+.footer__li-redes{
+    color: #000;
+    background-color: #eee;
+    border-top: solid 2px #eee;
+    border-left: solid 2px #eee;
+    border-bottom: solid 2px #808080;
+    border-right: solid 2px #808080;
+    border-radius: 45%;
+    padding: 10px;
+}
+
+@media (min-width: 480px){
+
+    .email-registro{
+        padding-right:11%;
+    }
+
+    .contraseña-registro{
+        padding-right: 3.3%;
+    }
+
+    .iconos-facebook, .iconos-twitter, .iconos-instagram{
+        font-size: 25px;
+        padding: 7px 10px;
+    }
+
+    .contenedor-tyc{
+        font-size: 20px;
+    }
+
+    .button-crearCuenta, .button-iniciarSesion {
+        width: 40%;
+    }
+
+    .tenesCuenta-registro{
+        font-size: 20px;
+    }
+
+    .input-nombre, .input-email, .input-contraseña{
+        height: 22px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .input-fechaNacimiento{
+        height: 25px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .contenedor-fechaDeNacimiento{
+        margin-bottom: 20px;
+    }
+
+     /* Footer */
+    .footer__met-pago{
+        width: 50px;
+    }
+}
+@media (min-width: 769px){
+    .logo-img{
+        width: 150px;
+    }
+
+    .email-registro{
+        padding-right:10.3%;
+    }
+
+    .contraseña-registro{
+        padding-right: 5.6%;
+    }
+    .iconos-facebook, .iconos-twitter, .iconos-instagram{
+        margin: 0 50px;
+        padding: 8px 12px;
+    }
+
+    .lista-iconos-registro{
+        margin: 10px 0 25px 0;
+    }
+
+    .button-crearCuenta{
+        width: 25%;
+    }
+
+    .input-fechaNacimiento{
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer__primer-fila{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/*Termina Registro*/

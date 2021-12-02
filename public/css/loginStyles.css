@@ -1,27 +1,47 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0
 }
 
 /* Teléfonos chicos, 361px */
 
-body {
+.body {
     font-family: 'Roboto', sans-serif;
     background-color: #476072;
     width: 100%;
     height: 100vh;
 }
 
-main{
-    background-color: #548ca8;
-    padding: 10px
+.body::-webkit-scrollbar{
+    width: 10px;
 }
 
-.header-registro{
-    background-color: #334257;
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
 }
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
+}
+
+/* Inicio del Login */
+
+/* Contenedor principal */
+
+.main--login {
+    background-color: #eee;
+    padding: 10px;
+    max-width: 450px;
+    margin: 2% auto;
+    border-radius: 25px;
+}
+
+/* Logo */
 
 .logo-img{
-    width: 70px;
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -30,6 +50,8 @@ main{
     text-align: center;
 }
 
+/* Formulario */
+
 .form {
     max-width: 90%;
     margin: 0 auto;
@@ -37,7 +59,6 @@ main{
 
 .form__logo {
     text-align: center;
-    padding: 2% 0 0 0;
 }
 
 .form__img {
@@ -45,7 +66,8 @@ main{
 }
 
 .form__subtitulo-login, .form__subtitulo-a, .form__span, .form__a {
-    color: #eee;
+    color: #333;
+
 }
 
 .form__segunda-seccion {
@@ -73,18 +95,27 @@ main{
 
 .form__input {
     padding: 5px;
-    width: 90%;
     margin: 5px;
     border-radius: 10px;
     border: 1px solid black;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 4, 55, 0.8);
 }
+
+input::placeholder {
+    color: #476072;
+}
+
 
 .form__tercera-seccion {
     display: flex;
     flex-direction: column;
     margin: 10px;
     align-items: center;
+    gap: 4%;
+}
+
+.form__contenedor-checkbox {
+    text-align: center;
 }
 
 .form__subtitulo-a, .form__a {
@@ -109,14 +140,14 @@ cursor: pointer
 }
 
 .form__boton-enviar {
-    color: #000000;
+    color: #000;
     margin: auto;
     padding: 10px;
     width: 60%;
     border-radius: 10px;
     border: solid 1px #000;
     background-color: #eee;
-    transition: all 1s;
+    transition: all .5s;
     cursor: pointer
 }
 
@@ -124,18 +155,24 @@ cursor: pointer
     background-color: #476072;
     color: white;
 }
+
 /* Footer */
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #334257;
 }
 
 .footer__primer-fila{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
 }
 
 .footer__ul{
@@ -153,6 +190,12 @@ cursor: pointer
 .footer__li-enlaces-generales{
     text-decoration: none;
     color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .footer__li-met-pago{
@@ -182,20 +225,23 @@ cursor: pointer
 
 @media (min-width: 481px) {
 
+    .logo-img {
+        width: 60%;
+    }
+
     .form {
         max-width: 65%;
         border-radius: 50px;
     }
 
-    .form__boton-enviar {
-        width: 40%;
+    .form__tercera-seccion {
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
     }
 
-
-    .form__tercera-seccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .form__input {
+        width: 50%;
     }
 
     /* Footer */
@@ -207,28 +253,24 @@ cursor: pointer
 /* PCs chicas en adelante*/
 
 @media (min-width: 769px) {
-    
+
     .logo-img{
         width: 150px;
     }
 
     .form {
-        max-width: 65%;
         margin: 2% 0 0 20%;
-        border-radius: 50px;
     }
 
     .form__input {
-        width: 30%;
+        width: 50%;
     }
 
     .form__boton-enviar {
         width: 200px;
     }
     .form__tercera-seccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 50px;
     }
 
     /* Footer */
@@ -245,24 +287,22 @@ cursor: pointer
         max-width: 50%;
         margin: 1% 0 0 25%;
         padding-bottom: 1%;
-        border-radius: 50px;
     }
 
     .form__input {
-        width: 30%;
+        width: 65%;
     }
 
     .form__contenedor-subtitulos {
         justify-content: space-evenly;
-    }
-
-    .form__tercera-seccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        gap: 10%;
     }
 
     .form__boton-enviar {
-        width: 25%;
+        width: 100%;
+    }
+
+    .form__tercera-seccion {
+        gap: 7%;
     }
 }

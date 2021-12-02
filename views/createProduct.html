@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/productDetailStyles.css">
-    <script src="https://kit.fontawesome.com/5a0a849f2d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/createProductStyles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Game Soul</title>
 </head>
 <body class="body">
@@ -25,8 +25,8 @@
                 <div class="cont-i__cont-lista-icono">
                     <img src="../images/user.svg" class="cont-i__iconos con-i__iconos--user">
                     <ul class="cont-i__lista">
-                        <li class="cont-i__items cont-i__items-log"><a href="login.html" class="cont-i__enlaces">Login</a></li>
-                        <li class="cont-i__items"><a href="register.html" class="cont-i__enlaces">Register</a></li>
+                        <li class="cont-i__items cont-i__items-log"><a href="/login" class="cont-i__enlaces">Login</a></li>
+                        <li class="cont-i__items"><a href="/register" class="cont-i__enlaces">Register</a></li>
                     </ul>
                 </div>
                 <a href="productCart.html"><img src="../images/shop.svg" class="cont-i__iconos"></a>
@@ -45,62 +45,52 @@
         </nav>
     </header>
 
-    <main class="main__product-detail">
-        <section class="juego">
-            <div class="nombre__juego">
-                COD: Black Ops 4
-            </div>
+    <form action="" method="post" class="formCreateProduct">
+        <div class="form__seccion-nombre">
+            <span>Nombre del producto:</span>
+            <input type="text" name="nombreDelProductoCreado" placeholder="Nombre del producto..." required>
+        </div>
 
-            <div class="cont-img__juego">
-                <img class="img__juego" src="../images/COD-Black-Ops-4-250px.jpg" alt="COD-Black-Ops-4" >
-            </div>
+        <div class="form__seccion-descripcion">
+            <span>Descripción del producto:</span>
+            <input type="textarea" name="descripcionDelProductoCreado" placeholder="Descripción del producto..." required>
+        </div>
 
-            <div class="plataformas">
-                Plataformas
-            </div>
+        <div class="form__seccion-img">
+            <span>Inserta una imagen:</span>
+            <input type="file" accept=".png, .jpg" multiple name="imagenDelProductoCreado" required>
+        </div>
 
-            <div class="cont__consolas">
-                <div class="ps5"><img class="img__juego" src="../images/PlayStation_5_Logo.svg" alt=""></div>
-                <div class="xbox"><img class="img__juego" src="../images/Xbox_Logo.svg" alt=""></div>
-                <div class="pc"><img class="img__juego" src="../images/Windows_Logo.svg" alt=""></div>
-            </div>
+        <div class="form__seccion-categoria">
+            <span>Selecciona un género:</span>
+            <select name="generoDelProductoCreado" required>
+                <option value="accion">Acción</option>
+                <option value="aventura">Aventura</option>
+                <option value="fps">FPS</option>
+                <option value="estrategia">Estrategia</option>
+                <option value="deportes">Deportes</option>
+            </select>
+        </div>
 
-            <div class="edicion">
-                Edicion
-            </div>
+        <div class="form__seccion-edicion">
+            <span>Selecciona una edición:</span>
+            <select name="edicionDelProductoCreado" required>
+                <option value="estandar">Estándar</option>
+                <option value="coleccionista">Coleccionista</option>
+            </select>
+        </div>
 
-            <div class="ediciones">
-                <button class="estandar">Estandar</button>
-                <button class="estandar">Deluxe</button>
-                <button class="estandar">Gold</button>
-            </div>
-        </section>
+        <div class="form__seccion-precio">
+            <span>Escribe un precio:</span>
+            <input type="text" name="precioDelProductoCreado" required>
+        </div>
 
-        <section class="detalles">
-            <div class="precio"> $ 8,999.00 </div>
-            <div class="cont__añadir" >
-                <button type="submit" class="añadir__carrito-fav">Añadir al carrito</button>
-                <button type="submit" class="añadir__carrito-fav">Añadir a favoritos</button>
-            </div>
-            <div class="stock">
-                Stock
-            </div>
+        <div class="form__seccion-inputCrear">
+            <input type="submit" value="Crear Producto">
+        </div>
+    </form>
 
-            <div class="contenido">
-                <div class="video__detalles">
-                    <button class="video">Videos</button>
-                    <button class="descripcion"> Descripcion</button>
-                    <button class="ficha__tecnica">Ficha tecnica</button>
-                    
-                </div>
-                <div class="cont__detalles">
-                    Black Ops 4 es el primer título de la serie sin un modo de campaña tradicional 
-                    para un jugador. En cambio, presenta el modo de misiones en solitario, que se centra 
-                    en las historias de fondo de los personajes multijugador del juego, conocidos como "especialistas".
-                </div>
-            </div>
-        </section>
-    </main>
+
 
     <footer class="footer">
         <div class="footer__primer-fila">

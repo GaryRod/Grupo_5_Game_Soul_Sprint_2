@@ -4,12 +4,25 @@
     box-sizing: border-box;
 }
 
-body{
+.body{
     width: 100%;
     height: 100vh;
     background-color: #476072;
     font-family: 'Roboto', sans-serif;
     color: #eee;
+}
+
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
 }
 
 /* Header */
@@ -160,6 +173,7 @@ body{
     width: 100%;
     margin-top: 100px;
 }
+
 .juego{
     box-shadow: 2px 2px  4px rgba(0, 0, 0, 0.5) ;
     display: flex;
@@ -169,6 +183,7 @@ body{
     width: 90%;
     height: 100%;
 }
+
 .nombre__juego{
     padding: 5px;
     color:#eee;
@@ -179,28 +194,33 @@ body{
     margin-bottom: 30px;
     text-align: center;
 }
+
 .cont-img__juego{
     width: 80%;
     height: auto;
     margin-bottom: 10px;
 }
+
 .img__juego{
     width: 100%;
     max-height: 320px;
     max-width: 250px;
 }
+
 .plataformas{
     color: #eee;
     text-align: center;
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .cont__consolas{
     display: flex;
     width: 80%;
     justify-content: space-around;
     margin-bottom: 10px;
 }
+
 .ps5{
     display: flex;
     justify-content: center;
@@ -213,6 +233,7 @@ body{
     background-color: #eee;
     box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
 }
+
 .xbox{
     display: flex;
     justify-content: center;
@@ -225,6 +246,7 @@ body{
     text-shadow:2px 4px  4px rgba(0, 0, 0, 0.8) ;
     box-shadow:2px 2px  2px 2px rgba(0, 0, 0, 0.4) ;
 }
+
 .pc{
     display: flex;
     justify-content: center;
@@ -242,6 +264,7 @@ body{
     color: #eee;
     font-size: 20px;
 }
+
 .ediciones{
     width: 90%;
     height: auto;
@@ -251,6 +274,7 @@ body{
     padding: 5px;
     justify-content: space-around;
 }
+
 .ediciones button{
     background-color: #eee;
     padding: 3px;
@@ -258,9 +282,11 @@ body{
     border: solid 2px #334257;
     margin: 3px;
 }
+
 .ediciones button:hover{
     opacity: .8;
 }
+
 .ediciones button:focus{
     background-color: #334257;
     color: #eee;
@@ -276,6 +302,7 @@ body{
     height: 400px;
     margin: 15px;
 }
+
 .precio{
     background-color: #334257;
     width: 150px;
@@ -286,25 +313,14 @@ body{
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
 .cont__añadir{
     width: 100%;
     display: flex;
     justify-content: space-around;
-
 }
-.añadir__carrito{
-    background-color: #4c854c;
-    border: solid 1px #417541;
-    box-shadow: 2px 2px 2px 1px #00000033;
-    display: flex;
-    align-items: center;
-    
-    height: 25px;
-    color: #eee;
-    cursor: pointer;
 
-}
-.añadir__favoritos{
+.añadir__carrito-fav{
     background-color: #4c854c;
     border: solid 1px #417541;
     box-shadow: 2px 2px 2px 1px #00000033;
@@ -314,11 +330,12 @@ body{
     color: #eee;
     cursor: pointer;
 }
-.añadir__carrito:hover,.añadir__favoritos:hover{
+
+.añadir__carrito-fav:hover{
     background-color: #074e07;
 }
 
-.añadir__carrito:active,.añadir__favoritos:active{
+.añadir__carrito-fav:active{
     transform: translate(2px, 2px);
     box-shadow: 0px 0px;
 }
@@ -327,9 +344,8 @@ body{
     display: flex;
     background-color: #548ca8;
     width: 100%;
-    
-    
 }
+
 .video{
     color: #334257;
     border: solid 1px black;
@@ -340,6 +356,7 @@ body{
     background-color: #eee;
     cursor: pointer;
 }
+
 .descripcion{
     color: #334257;
     border: solid 1px black;
@@ -351,6 +368,7 @@ body{
     background-color: #eee;
     cursor: pointer;
 }
+
 .ficha__tecnica{
     color: #334257;
     border: solid 1px black;
@@ -362,10 +380,12 @@ body{
     background-color: #eee;
     cursor: pointer;
 }
+
 .video__detalles button:focus{
     background-color: #334257;
     color: #eee;
 }
+
 .cont__detalles{
     padding: 20px;
     text-align: start;
@@ -374,16 +394,21 @@ body{
 
 /* Footer */
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #334257;
 }
 
 .footer__primer-fila{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
 }
 
 .footer__ul{
@@ -401,6 +426,12 @@ body{
 .footer__li-enlaces-generales{
     text-decoration: none;
     color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .footer__li-met-pago{
@@ -442,32 +473,37 @@ body{
     .main__product-detail{
         margin-top:120px;
     }
+    
     .juego{
         position: relative;
         flex-direction: row;
         flex-wrap: wrap;
         z-index: -10;
-
     }
+
     .cont-img__juego{
         width: 50%;
         text-align: center;
         border-right: solid 3px #334257;
     }
+
     .plataformas{
         position: absolute;
         right: 100px;
         top: 60px;
     }
+
     .cont__consolas{
         position: relative;
         top: -70px;
         width: 50%;
     }
+
     .edicion{
         width: 20%;
         text-align: center;
     }
+
     .ediciones{
         width: 80%;
         display: flex;
@@ -486,11 +522,13 @@ body{
     .header__primer-fila{
         padding: 5px 10px;
     }
+
     .main__product-detail{
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: center;
     }
+
     .juego{
         flex-wrap: wrap;
         flex-direction: column;
@@ -500,32 +538,39 @@ body{
         padding-left:20px;
         height: 710px;
     }
+
     .cont-img__juego{
         border:none;
     }
+
     .plataformas{
         position: static;
     }
+
     .cont__consolas{
         position: static;
         margin: 50px 0;
     }
+
     .ediciones{
         margin: 50px 0;;
-    
     }
+
     .detalles{
         display: flex;
         flex-direction: column;
         width: 60%;
         height: 710px;
     }
+
     .stock{
         height: 200px;
     }
+
     .cont-img__juego{
         width: 90%;
     }
+    
      /* Footer */
     .footer__primer-fila{
         flex-direction: row;

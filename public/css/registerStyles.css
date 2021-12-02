@@ -8,18 +8,40 @@
     background-color: #476072;
     width: 100%;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
+
+.body::-webkit-scrollbar{
+    width: 10px;
+}
+
+.body::-webkit-scrollbar-thumb{
+    background: #334257;
+    border-radius: 5px;
+}
+
+.body::-webkit-scrollbar-track{
+    background: #548ca8;
+}   
 
 .header-registro{
     background-color: #334257;
 }
+.main-registro{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    ;
+}
 
 .section-registro{
-    background-color: #548ca8;
+    background-color: #eee;
+    margin: 2% 5%;
+    border-radius: 25px;
 }
 
 .logo-img{
-    width: 70px;
+    width: 30%;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -31,7 +53,7 @@
 .titulo-registro{
     font-size: 15px;
     text-align: center;
-    color: #EEEEEE;
+    color:#000;
     padding: 15px;
 }
 
@@ -57,8 +79,8 @@
 }
 
 .form-registro{
+    color:#000;
     font-size: 12px;
-    color:#EEEEEE;
     padding: 0 10% 0 10%;
     text-align: left;
 }
@@ -109,7 +131,7 @@
     margin: 15px;
 }
 
-.button-crearCuenta, .button-iniciarSesion{
+.button-crearCuenta{
     color: #000000;
     margin: auto;
     padding: 10px;
@@ -121,14 +143,22 @@
     cursor: pointer
 }
 
-.button-crearCuenta:hover, .button-iniciarSesion:hover{
+.button-crearCuenta:hover{
     background-color: #476072;
     color: white;
 }
 
 .contenedor-iniciarSesion{
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
     padding-bottom: 15px;
+    font-size: 15px;
+    align-items: center;
+}
+.button-iniciarSesion{
+    color: #000;
+    text-decoration: inherit;
+
 }
 
 .tenesCuenta-registro{
@@ -146,16 +176,21 @@
 
 /* Footer */
 .footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    background-color: #334257;
 }
 
 .footer__primer-fila{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    margin-bottom: 5px
 }
 
 .footer__ul{
@@ -173,6 +208,12 @@
 .footer__li-enlaces-generales{
     text-decoration: none;
     color: #eee;
+}
+
+.footer__ul--met-pago{
+    padding: 2px;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .footer__li-met-pago{
@@ -263,7 +304,7 @@
         margin: 10px 0 25px 0;
     }
 
-    .button-crearCuenta, .button-iniciarSesion {
+    .button-crearCuenta{
         width: 25%;
     }
 
